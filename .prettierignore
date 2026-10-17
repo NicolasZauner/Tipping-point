@@ -1,0 +1,5 @@
+dist
+coverage
+node_modules
+src/data/generated
+tests/golden/__snapshots__
