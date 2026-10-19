@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choice rule prototype</title>
+<style>
+  /* PROTOTYPE, throwaway. Answers one question about the Tipping Point choice rule. */
+  :root {
+    --bg: #fafafa; --surface: #ffffff; --line: #e4e4e7; --fg: #18181b; --muted: #52525b;
+    --accent: #0f766e; --ice: #71717a; --fhev: #b45309; --phev: #7c3aed; --bev: #0f766e;
+    --sans: ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "SF Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #09090b; --surface: #18181b; --line: #3f3f46; --fg: #fafafa; --muted: #a1a1aa;
+      --accent: #2dd4bf; --ice: #a1a1aa; --fhev: #fbbf24; --phev: #c4b5fd; --bev: #2dd4bf; color-scheme: dark; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 var(--sans);
+    padding: 24px max(16px, env(safe-area-inset-left, 0px)); }
+  main { max-width: 1040px; margin: 0 auto; display: grid; gap: 20px; }
+  h1 { font-size: 24px; margin: 0; } h2 { font-size: 15px; margin: 0 0 8px; }
+  p { margin: 0; max-width: 72ch; }
+  .muted { color: var(--muted); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; min-width: 0; }
+  .grid2 { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 800px) { .grid2 { grid-template-columns: 1fr; } }
+  .mono, td.n, th.n { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 5px 6px; border-bottom: 1px solid var(--line); }
+  td.n, th.n { text-align: right; }
+  .wrap { overflow-x: auto; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+  button { font: inherit; font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line);
+    background: var(--surface); color: var(--fg); cursor: pointer; }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  button:disabled { opacity: .4; cursor: default; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .tabs button[aria-selected="true"] { border-color: var(--accent); box-shadow: inset 0 -2px 0 var(--accent); }
+  .changed { background: color-mix(in srgb, var(--accent) 18%, transparent); }
+  .kv { display: grid; grid-template-columns: auto auto; gap: 2px 16px; font-size: 13px; }
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+  ol { margin: 6px 0 0 18px; padding: 0; } li { margin: 4px 0; }
+  svg text { fill: var(--muted); font: 11px var(--sans); }
+</style>
+</head>
+<body>
+<main>
+  <header style="display:grid;gap:6px">
+    <div class="mono muted" style="font-size:12px">PROTOTYPE · TP P3 · throwaway</div>
+    <h1>Does the choice rule behave like a car market?</h1>
+    <p class="muted">Every buyer has a tolerance: how much more, as a TCO ratio against a combustion car, they'd pay for the newest powertrain. Each of the five groups has its tolerances spread around a mean. A buyer picks the powertrain with the best score, and the score combines the tolerance, the TCO ratio and two extras that calibration will fit. Press the buttons and watch who switches. The numbers are illustrative: Germany 2026, medium class, a private buyer with a home charger.</p>
+  </header>
+
+  <section class="card">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div id="walk"></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>What the buyer sees</h2>
+      <div class="kv" id="inputs"></div>
+      <h2 style="margin-top:14px">Free play</h2>
+      <div class="buttons" id="free"></div>
+    </section>
+    <section class="card">
+      <h2>Tolerance curves and today's BEV ratio</h2>
+      <div class="wrap"><svg id="curves" viewBox="0 0 480 210" width="100%" role="img" aria-label="Tolerance curves of the five groups with the BEV ratio line"></svg></div>
+      <p class="muted" style="font-size:12px">Buyers to the right of the line accept the BEV's cost. With the extras off and no hybrids, that area is exactly the BEV share.</p>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Who buys what</h2>
+    <div class="wrap"><table id="shares"></table></div>
+    <p class="muted" style="font-size:12px;margin-top:8px" id="note"></p>
+  </section>
+</main>
+
+<script>
+// ---- Pure module: the choice rule. No DOM in here; it lifts into src/model/choice.ts. ----
+const ChoiceRule = (() => {
+  const POWERTRAINS = ["ICE", "FHEV", "PHEV", "BEV"];
+  // Normal CDF via erfc (series below 3, continued fraction above), quantile via Acklam + Halley.
+  function erfc(x) {
+    if (x < 0) return 2 - erfc(-x);
+    if (x < 3) { let term = x, sum = x; for (let n = 1; n < 200; n++) { term *= (2 * x * x) / (2 * n + 1); sum += term; if (term < sum * 1e-17) break; }
+      return 1 - (2 / Math.sqrt(Math.PI)) * Math.exp(-x * x) * sum; }
+    let f = x, C = x, D = 0;
+    for (let k = 1; k < 500; k++) { const a = k / 2; D = x + a * D; C = x + a / C; D = 1 / D; const d = C * D; f *= d; if (Math.abs(d - 1) < 1e-16) break; }
+    return Math.exp(-x * x) / Math.sqrt(Math.PI) / f;
+  }
+  const cdf = (z) => 0.5 * erfc(-z / Math.SQRT2);
+  const pdf = (z) => Math.exp(-0.5 * z * z) / Math.sqrt(2 * Math.PI);
+  function quantile(p) {
+    const a = [-39.69683028665376, 220.9460984245205, -275.9285104469687, 138.357751867269, -30.66479806614716, 2.506628277459239];
+    const b = [-54.47609879822406, 161.5858368580409, -155.6989798598866, 66.80131188771972, -13.28068155288572];
+    const c = [-0.007784894002430293, -0.3223964580411365, -2.400758277161838, -2.549732539343734, 4.374664141464968, 2.938163982698783];
+    const d = [0.007784695709041462, 0.3224671290700398, 2.445134137142996, 3.754408661907416];
+    let x;
+    if (!(p > 0 && p < 1)) throw new RangeError('p out of range');
+    if (p < 0.02425) { const q = Math.sqrt(-2 * Math.log(p)); x = (((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5]) / ((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1); }
+    else if (p <= 0.97575) { const q = p - 0.5, r = q*q; x = (((((a[0]*r+a[1])*r+a[2])*r+a[3])*r+a[4])*r+a[5])*q / (((((b[0]*r+b[1])*r+b[2])*r+b[3])*r+b[4])*r+1); }
+    else { const q = Math.sqrt(-2 * Math.log(1 - p)); x = -(((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5]) / ((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1); }
+    const e = cdf(x) - p, u = e * Math.sqrt(2 * Math.PI) * Math.exp(x * x / 2);
+    return x - u / (1 + x * u / 2);
+  }
+
+  // Score of powertrain k for a buyer with tolerance t: novelty x (t - 1) - (effective ratio - 1) + appeal.
+  // ICE scores 0. With taste spread 0 the buyer takes the best score (ties to the more conservative
+  // powertrain); with taste spread > 0 choice probabilities follow a softmax of score / spread.
+  function groupShares(mean, s) {
+    const out = { ICE: 0, FHEV: 0, PHEV: 0, BEV: 0 };
+    const offered = POWERTRAINS.filter((k) => k === "ICE" || s.offered[k]);
+    for (let i = 0; i < s.quantiles; i++) {
+      const t = mean + s.sigma * quantile((i + 0.5) / s.quantiles);
+      const score = {};
+      for (const k of offered) score[k] = k === "ICE" ? 0 : s.novelty[k] * (t - 1) - (s.ratio[k] * (1 + s.hurdle[k]) - 1) + s.appeal[k];
+      if (s.tau === 0) {
+        let best = "ICE";
+        for (const k of offered) if (score[k] > score[best] + 1e-12) best = k;
+        out[best] += 1 / s.quantiles;
+      } else {
+        const m = Math.max(...offered.map((k) => score[k]));
+        let z = 0; const w = {};
+        for (const k of offered) { w[k] = Math.exp((score[k] - m) / s.tau); z += w[k]; }
+        for (const k of offered) out[k] += w[k] / z / s.quantiles;
+      }
+    }
+    return out;
+  }
+  function shares(s) {
+    const byGroup = s.groups.map((g) => ({ ...g, shares: groupShares(g.mean, s) }));
+    const total = { ICE: 0, FHEV: 0, PHEV: 0, BEV: 0 };
+    for (const g of byGroup) for (const k of POWERTRAINS) total[k] += g.size * g.shares[k];
+    return { byGroup, total };
+  }
+  return { POWERTRAINS, shares, cdf, pdf };
+})();
+
+// ---- Throwaway page: state, buttons, walkthroughs. ----
+const BASE = {
+  ratio: { FHEV: 0.963, PHEV: 1.160, BEV: 0.951 },
+  novelty: { FHEV: 0.2, PHEV: 0.6, BEV: 1 },
+  appeal: { FHEV: 0, PHEV: 0, BEV: 0 },
+  hurdle: { FHEV: 0, PHEV: 0, BEV: 0 },
+  offered: { FHEV: true, PHEV: true, BEV: true },
+  tau: 0, sigma: 0.08, quantiles: 201,
+  groups: [
+    { name: "Innovators", mean: 1.35, size: 0.05 },
+    { name: "Early adopters", mean: 1.15, size: 0.238 },
+    { name: "Early majority", mean: 1.02, size: 0.076 },
+    { name: "Late majority", mean: 0.93, size: 0.361 },
+    { name: "Laggards", mean: 0.80, size: 0.276 },
+  ],
+};
+const clone = (o) => JSON.parse(JSON.stringify(o));
+let state = clone(BASE), last = null, note = "";
+
+const ACTIONS = {
+  bevCheaper: { label: "BEV 5% cheaper", run: (s) => { s.ratio.BEV = +(s.ratio.BEV * 0.95).toFixed(3); } },
+  bevDearer: { label: "BEV 5% dearer", run: (s) => { s.ratio.BEV = +(s.ratio.BEV * 1.05).toFixed(3); } },
+  bevParity: { label: "BEV at exact parity", run: (s) => { s.ratio.BEV = 1; } },
+  hybridCheaper: { label: "Full hybrid 5% cheaper", run: (s) => { s.ratio.FHEV = +(s.ratio.FHEV * 0.95).toFixed(3); } },
+  phevTaxBreak: { label: "PHEV company-car tax break (15% cheaper)", run: (s) => { s.ratio.PHEV = +(s.ratio.PHEV * 0.85).toFixed(3); } },
+  hybridsOff: { label: "Take hybrids off the market", run: (s) => { s.offered.FHEV = false; s.offered.PHEV = false; } },
+  hybridsOn: { label: "Bring hybrids back", run: (s) => { s.offered.FHEV = true; s.offered.PHEV = true; } },
+  noCharger: { label: "Buyer has no home charger (+8% hurdle)", run: (s) => { s.hurdle.BEV = 0.08; } },
+  charger: { label: "Buyer has a home charger", run: (s) => { s.hurdle.BEV = 0; } },
+  spreadOn: { label: "Add taste spread (0.03)", run: (s) => { s.tau = 0.03; } },
+  spreadOff: { label: "Remove taste spread", run: (s) => { s.tau = 0; } },
+  appealOn: { label: "Add appeal constants (as calibration might)", run: (s) => { s.appeal = { FHEV: -0.06, PHEV: -0.02, BEV: -0.08 }; } },
+  appealOff: { label: "Remove appeal constants", run: (s) => { s.appeal = { FHEV: 0, PHEV: 0, BEV: 0 }; } },
+  reset: { label: "Reset", run: (s) => { Object.assign(s, clone(BASE)); } },
+};
+
+const WALKS = [
+  { title: "1 · Your original logic", text: "With hybrids off the market and both extras off, the rule must reduce exactly to your consulting logic: within each group, the BEV share equals Φ((group mean − BEV ratio) / spread). Watch the last column: the rule's share and Φ agree within a few tenths of a point. The gap is this prototype's 201-point integration; the real model computes this case exactly.",
+    steps: ["reset", "hybridsOff", "bevDearer", "bevParity"] },
+  { title: "2 · Early adopters and a cheap hybrid", text: "The hybrid is cheaper to own than the BEV, yet early adopters still buy the BEV, because their tolerance rewards novelty. Laggards go the other way. Make the hybrid even cheaper and see who moves.",
+    steps: ["reset", "hybridCheaper", "hybridCheaper"] },
+  { title: "3 · Why calibration is needed", text: "On priors alone the rule gives a private buyer with a home charger more than 40% BEV in 2026, far above what Germany actually sees. Real buyers face things a TCO doesn't hold: few hybrid models from their brand, charging worries, habits. The appeal constants and the taste spread are where calibration puts that. The values here are guesses; TP P10 fits them on 2018 to 2025.",
+    steps: ["reset", "spreadOn", "appealOn"] },
+  { title: "4 · Laggards at parity", text: "Put the BEV at exact parity. Almost no laggard switches, because their tolerance sits below 1: they want the BEV to be clearly cheaper. Then remove the home charger and watch the late majority hesitate.",
+    steps: ["reset", "bevParity", "noCharger"] },
+  { title: "5 · The plug-in squeeze", text: "A company-car tax break makes the PHEV 15% cheaper. With the crisp rule, the first break changes nothing and the second flips almost every buyer to the PHEV. That jump is the crisp rule's weakness once there are three alternatives: the one in the middle wins either nobody or everybody. Add the taste spread and the shift becomes partial instead of all or nothing, which is how registrations actually move.",
+    steps: ["reset", "phevTaxBreak", "phevTaxBreak", "spreadOn"] },
+];
+
+let activeWalk = 0, stepIndex = 0;
+
+function dispatch(id) {
+  last = clone(state);
+  ACTIONS[id].run(state);
+  render();
+}
+const pct = (x) => (x * 100).toFixed(1) + "%";
+
+function render() {
+  const res = ChoiceRule.shares(state);
+  const prevRes = last ? ChoiceRule.shares(last) : null;
+  // inputs panel
+  const rows = [
+    ["BEV ratio", state.ratio.BEV.toFixed(3), last && last.ratio.BEV !== state.ratio.BEV],
+    ["Full hybrid ratio", state.ratio.FHEV.toFixed(3), last && last.ratio.FHEV !== state.ratio.FHEV],
+    ["PHEV ratio", state.ratio.PHEV.toFixed(3), last && last.ratio.PHEV !== state.ratio.PHEV],
+    ["Hybrids offered", state.offered.FHEV ? "yes" : "no", last && last.offered.FHEV !== state.offered.FHEV],
+    ["No-charger hurdle (BEV)", pct(state.hurdle.BEV), last && last.hurdle.BEV !== state.hurdle.BEV],
+    ["Taste spread", state.tau.toFixed(2), last && last.tau !== state.tau],
+    ["Appeal constants", state.appeal.BEV === 0 ? "off" : `FHEV ${state.appeal.FHEV}, PHEV ${state.appeal.PHEV}, BEV ${state.appeal.BEV}`, last && last.appeal.BEV !== state.appeal.BEV],
+  ];
+  document.getElementById("inputs").innerHTML = rows.map(([k, v, ch]) => `<div class="muted">${k}</div><div class="mono ${ch ? "changed" : ""}">${v}</div>`).join("");
+  // shares table
+  const cols = ChoiceRule.POWERTRAINS;
+  const head = `<tr><th>Group</th><th class="n">Size</th>${cols.map((k) => `<th class="n"><span class="swatch" style="background:var(--${k.toLowerCase()})"></span>${k}</th>`).join("")}<th class="n">Φ check</th></tr>`;
+  const reduces = !state.offered.FHEV && !state.offered.PHEV && state.tau === 0 && state.appeal.BEV === 0;
+  const body = res.byGroup.map((g, gi) => {
+    const phi = ChoiceRule.cdf((g.mean - state.ratio.BEV * (1 + state.hurdle.BEV)) / state.sigma);
+    return `<tr><td>${g.name} <span class="muted mono">(${g.mean.toFixed(2)})</span></td><td class="n">${pct(g.size)}</td>${cols.map((k) => {
+      const ch = prevRes && Math.abs(prevRes.byGroup[gi].shares[k] - g.shares[k]) > 0.0005;
+      return `<td class="n ${ch ? "changed" : ""}">${pct(g.shares[k])}</td>`;
+    }).join("")}<td class="n muted">${reduces ? pct(phi) : "n/a"}</td></tr>`;
+  }).join("");
+  const tot = `<tr><th>All buyers</th><th class="n">100%</th>${cols.map((k) => `<th class="n">${pct(res.total[k])}</th>`).join("")}<th></th></tr>`;
+  document.getElementById("shares").innerHTML = head + body + tot;
+  document.getElementById("note").textContent = reduces
+    ? "Hybrids off, extras off: the rule's BEV column matches Φ in every group, so it is your original logic."
+    : "The Φ check only applies with hybrids off and both extras off.";
+  drawCurves();
+}
+
+function drawCurves() {
+  const svg = document.getElementById("curves");
+  const x0 = 0.5, x1 = 1.7, W = 480, H = 210, L = 30, R = 10, T = 10, B = 30;
+  const X = (v) => L + (v - x0) / (x1 - x0) * (W - L - R);
+  const ymax = ChoiceRule.pdf(0) / state.sigma;
+  const Y = (v) => H - B - v / ymax * (H - B - T);
+  const colours = ["#0f766e", "#0d9488", "#14b8a6", "#5eead4", "#99f6e4"];
+  let out = "";
+  state.groups.forEach((g, i) => {
+    let d = "";
+    for (let k = 0; k <= 120; k++) { const v = x0 + (x1 - x0) * k / 120; const y = ChoiceRule.pdf((v - g.mean) / state.sigma) / state.sigma;
+      d += (k ? "L" : "M") + X(v).toFixed(1) + " " + Y(y).toFixed(1); }
+    out += `<path d="${d}" fill="none" stroke="${colours[i]}" stroke-width="1.6"/>`;
+    out += `<text x="${X(g.mean)}" y="${Y(ymax) + 4 + (i % 3) * 12}" text-anchor="middle">${g.name.split(" ")[0]}</text>`;
+  });
+  const e = state.ratio.BEV * (1 + state.hurdle.BEV);
+  out += `<line x1="${X(e)}" x2="${X(e)}" y1="${T}" y2="${H - B}" stroke="var(--fg)" stroke-dasharray="4 3"/>`;
+  out += `<text x="${X(e) + 4}" y="${H - B - 18}" style="fill:var(--fg)">BEV ${e.toFixed(3)}</text>`;
+  for (const v of [0.6, 0.8, 1.0, 1.2, 1.4]) out += `<text x="${X(v)}" y="${H - 10}" text-anchor="middle">${v.toFixed(1)}</text>`;
+  out += `<line x1="${L}" x2="${W - R}" y1="${H - B}" y2="${H - B}" stroke="var(--line)"/>`;
+  out += `<text x="${W - R}" y="${H - 10}" text-anchor="end">ratio →</text>`;
+  svg.innerHTML = out;
+}
+
+function renderWalk() {
+  const w = WALKS[activeWalk];
+  document.getElementById("tabs").innerHTML = WALKS.map((x, i) => `<button role="tab" aria-selected="${i === activeWalk}" data-tab="${i}">${x.title}</button>`).join("");
+  document.getElementById("walk").innerHTML = `<p>${w.text}</p><ol>${w.steps.map((s, i) => `<li><button class="${i === stepIndex ? "primary" : ""}" data-step="${i}" ${i !== stepIndex ? "disabled" : ""}>${ACTIONS[s].label}</button></li>`).join("")}</ol>${stepIndex >= w.steps.length ? '<p class="muted" style="margin-top:8px">Done. Use free play to keep pushing, or pick another walkthrough.</p>' : ""}`;
+}
+document.getElementById("tabs").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-tab]"); if (!b) return;
+  activeWalk = +b.dataset.tab; stepIndex = 0; state = clone(BASE); last = null; renderWalk(); render();
+});
+document.getElementById("walk").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-step]"); if (!b || b.disabled) return;
+  dispatch(WALKS[activeWalk].steps[stepIndex]); stepIndex += 1; renderWalk();
+});
+document.getElementById("free").innerHTML = Object.entries(ACTIONS).map(([id, a]) => `<button data-act="${id}">${a.label}</button>`).join("");
+document.getElementById("free").addEventListener("click", (e) => { const b = e.target.closest("[data-act]"); if (b) dispatch(b.dataset.act); });
+renderWalk(); render();
+</script>
+</body>
+</html>
