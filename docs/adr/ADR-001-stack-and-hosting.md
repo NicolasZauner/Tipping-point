@@ -73,13 +73,13 @@ tested against reference values (mpmath at 30 digits for the normal). `npm audit
 
 ## Spike results (TP P1)
 
-| Check                         | Local `file://`                                | Served over http | Inside claude.ai |
-| ----------------------------- | ---------------------------------------------- | ---------------- | ---------------- |
-| Inline worker (blob: URL)     | Refused, falls back                            | Runs             | See below        |
-| Seeded estimate of Φ(1), 200k | 0.8411 (exact 0.8413), identical on both paths | 0.8411           | See below        |
-| `sample` and page tools       | Absent (as designed)                           | Absent           | See below        |
+| Check                         | Local `file://`                                | Served over http | Inside claude.ai                                                       |
+| ----------------------------- | ---------------------------------------------- | ---------------- | ---------------------------------------------------------------------- |
+| Inline worker (blob: URL)     | Refused, falls back                            | Runs             | Runs                                                                   |
+| Seeded estimate of Φ(1), 200k | 0.8411 (exact 0.8413), identical on both paths | 0.8411           | 0.8411                                                                 |
+| `sample` and page tools       | Absent (as designed)                           | Absent           | Available; the page-tool test passed, the download test saved its file |
 
-The in-frame column is filled after Nico opens the published link (TP P1 check).
+Nico ran the in-frame checks on 19 Oct 2026, signed in and in a private window: everything passed.
 
 ## Consequences
 
@@ -94,4 +94,4 @@ The in-frame column is filled after Nico opens the published link (TP P1 check).
 1. [x] Scaffold, pins, `to-artifact`, `prepublish-check` with the anonymity and former-employer lists.
 2. [x] Worker spike with fallback; seeded generator and normal distribution with tests.
 3. [x] Publish the shell artifact.
-4. [ ] Nico opens the link signed in and in a private window; records the in-frame column.
+4. [x] Nico opened the link signed in and in a private window (19 Oct 2026); all checks passed.
