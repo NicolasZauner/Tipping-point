@@ -10,13 +10,15 @@ import { createHash } from "node:crypto";
 
 const MAX_BYTES = 3 * 1024 * 1024;
 // Stored only as SHA-256 of the lowercase word or word pair, so this file can't leak them if the
-// repo goes public. Same list as Cut-in: two interviewees and their employers.
+// repo goes public. Two interviewees and their employers, as in Cut-in, with one deviation: the
+// car brand is a legitimate premium brand in this app's data (D14), so for the second employer
+// only the two-word name of its engineering subsidiary is banned, not the brand on its own.
 const ANONYMOUS = new Set([
   "31f8e0bc67bce7b4809d39a1e8002e9896b16af00e6bdda51540f9bcd6833c97",
   "c8711d542164f6907cf935b509da989db272e2309ce2ee77d9e6637a6ae6d599",
   "60e5f55a1e11c46f160b87ef8ba7d289ed5b7c162a8588f7ce71d2dce9e6e486",
   "09e47d7bf4dab7810128c83abf2eb3e1103775c3818f5bee37971dafaf14882a",
-  "9c15e816069946fbd20bed0935dd9d8e34d64034d657a2b852f8b66ad91af5b6",
+  "0b22b58c9f31b0246778534fc30017e0d9af4b198a1342e4ffcd345f9bbb437a",
   "3410a9c7364d54845815597dff06a96ae9c38f5e27acab05549a243d7c249cdf",
 ]);
 // The former employer, kept out of everything a viewer or a public reader of the code could see.
