@@ -1,0 +1,197 @@
+{
+  "_about": "BEV share of the passenger-car fleet, ACEA. 2023 matches the EAFO survey (October 2023) and sets the innovator group; 2024 is shown for the trend. Shares are printed to one decimal, so each range is the rounding interval.",
+  "bevFleetShare": {
+    "DE": {
+      "2023": {
+        "value": 0.029,
+        "unit": "share of cars in use",
+        "method": "data",
+        "source": {
+          "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+          "publisher": "ACEA",
+          "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+        },
+        "retrieved": "2026-10-20",
+        "confidence": "high",
+        "low": 0.0285,
+        "high": 0.0295,
+        "note": "Cars in use: 49,098,685. Read from a copy of the ACEA PDF; the publication page is the source."
+      },
+      "2024": {
+        "value": 0.033,
+        "unit": "share of cars in use",
+        "method": "data",
+        "source": {
+          "title": "Vehicles on European roads, January 2026 (table 7: cars by power source, 2024)",
+          "publisher": "ACEA",
+          "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2026/"
+        },
+        "retrieved": "2026-10-20",
+        "confidence": "high",
+        "low": 0.0325,
+        "high": 0.0335,
+        "note": "Cars in use: 49,339,166. Read from a copy of the ACEA PDF; the publication page is the source."
+      }
+    },
+    "FR": {
+      "2023": {
+        "value": 0.022,
+        "unit": "share of cars in use",
+        "method": "data",
+        "source": {
+          "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+          "publisher": "ACEA",
+          "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+        },
+        "retrieved": "2026-10-20",
+        "confidence": "high",
+        "low": 0.0215,
+        "high": 0.0225,
+        "note": "Cars in use: 39,258,632. Read from a copy of the ACEA PDF; the publication page is the source."
+      },
+      "2024": {
+        "value": 0.028,
+        "unit": "share of cars in use",
+        "method": "data",
+        "source": {
+          "title": "Vehicles on European roads, January 2026 (table 7: cars by power source, 2024)",
+          "publisher": "ACEA",
+          "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2026/"
+        },
+        "retrieved": "2026-10-20",
+        "confidence": "high",
+        "low": 0.0275,
+        "high": 0.0285,
+        "note": "Cars in use: 39,738,933. Read from a copy of the ACEA PDF; the publication page is the source."
+      }
+    },
+    "ES": {
+      "2023": {
+        "value": 0.006,
+        "unit": "share of cars in use",
+        "method": "data",
+        "source": {
+          "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+          "publisher": "ACEA",
+          "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+        },
+        "retrieved": "2026-10-20",
+        "confidence": "high",
+        "low": 0.0055,
+        "high": 0.0065,
+        "note": "Cars in use: 26,020,504. Read from a copy of the ACEA PDF; the publication page is the source."
+      },
+      "2024": {
+        "value": 0.008,
+        "unit": "share of cars in use",
+        "method": "data",
+        "source": {
+          "title": "Vehicles on European roads, January 2026 (table 7: cars by power source, 2024)",
+          "publisher": "ACEA",
+          "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2026/"
+        },
+        "retrieved": "2026-10-20",
+        "confidence": "high",
+        "low": 0.0075,
+        "high": 0.0085,
+        "note": "Cars in use: 26,469,462. Read from a copy of the ACEA PDF; the publication page is the source."
+      }
+    },
+    "IT": {
+      "2023": {
+        "value": 0.005,
+        "unit": "share of cars in use",
+        "method": "data",
+        "source": {
+          "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+          "publisher": "ACEA",
+          "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+        },
+        "retrieved": "2026-10-20",
+        "confidence": "high",
+        "low": 0.0045,
+        "high": 0.0055,
+        "note": "Cars in use: 40,915,229. Read from a copy of the ACEA PDF; the publication page is the source."
+      },
+      "2024": {
+        "value": 0.007,
+        "unit": "share of cars in use",
+        "method": "data",
+        "source": {
+          "title": "Vehicles on European roads, January 2026 (table 7: cars by power source, 2024)",
+          "publisher": "ACEA",
+          "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2026/"
+        },
+        "retrieved": "2026-10-20",
+        "confidence": "high",
+        "low": 0.0065,
+        "high": 0.0075,
+        "note": "Cars in use: 41,340,516. Read from a copy of the ACEA PDF; the publication page is the source."
+      }
+    },
+    "NL": {
+      "2023": {
+        "value": 0.049,
+        "unit": "share of cars in use",
+        "method": "data",
+        "source": {
+          "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+          "publisher": "ACEA",
+          "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+        },
+        "retrieved": "2026-10-20",
+        "confidence": "high",
+        "low": 0.0485,
+        "high": 0.0495,
+        "note": "Cars in use: 9,413,692. Read from a copy of the ACEA PDF; the publication page is the source."
+      },
+      "2024": {
+        "value": 0.061,
+        "unit": "share of cars in use",
+        "method": "data",
+        "source": {
+          "title": "Vehicles on European roads, January 2026 (table 7: cars by power source, 2024)",
+          "publisher": "ACEA",
+          "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2026/"
+        },
+        "retrieved": "2026-10-20",
+        "confidence": "high",
+        "low": 0.0605,
+        "high": 0.0615,
+        "note": "Cars in use: 9,621,272. Read from a copy of the ACEA PDF; the publication page is the source."
+      }
+    },
+    "BE": {
+      "2023": {
+        "value": 0.03,
+        "unit": "share of cars in use",
+        "method": "data",
+        "source": {
+          "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+          "publisher": "ACEA",
+          "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+        },
+        "retrieved": "2026-10-20",
+        "confidence": "high",
+        "low": 0.0295,
+        "high": 0.0305,
+        "note": "Cars in use: 5,963,882. Read from a copy of the ACEA PDF; the publication page is the source."
+      },
+      "2024": {
+        "value": 0.051,
+        "unit": "share of cars in use",
+        "method": "data",
+        "source": {
+          "title": "Vehicles on European roads, January 2026 (table 7: cars by power source, 2024)",
+          "publisher": "ACEA",
+          "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2026/"
+        },
+        "retrieved": "2026-10-20",
+        "confidence": "high",
+        "low": 0.0505,
+        "high": 0.0515,
+        "note": "Cars in use: 6,008,569. Read from a copy of the ACEA PDF; the publication page is the source."
+      }
+    }
+  }
+}

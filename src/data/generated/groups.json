@@ -1,0 +1,1189 @@
+{
+ "generatedBy": "scripts/build-segments.ts",
+ "designEffect": 1.5,
+ "default": "ladder",
+ "markets": {
+  "DE": {
+   "n": 1698,
+   "byMapping": {
+    "ladder": {
+     "innovators": {
+      "value": 0.029,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+       "publisher": "ACEA",
+       "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.023200000000000002,
+      "high": 0.036250000000000004,
+      "note": "BEV share of the car fleet, 2023; range 0.8× to 1.25× for company cars and growth since.",
+      "from": [
+       "acea.bevFleetShare.DE.2023"
+      ]
+     },
+     "early-adopters": {
+      "value": 0.22702414605418136,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.20398196672071814,
+      "high": 0.2518146756373485,
+      "note": "(1 − innovators) × share of 1698 non-BEV drivers' answers (Yes, within 0-2 years; Yes, within 2-3 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.DE.timeframe",
+       "acea.bevFleetShare.DE.2023"
+      ]
+     },
+     "early-majority": {
+      "value": 0.21215606595995287,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.18972800508077955,
+      "high": 0.23643304590850325,
+      "note": "(1 − innovators) × share of 1698 non-BEV drivers' answers (Yes, within 3-5 years; Yes, within 5-10 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.DE.timeframe",
+       "acea.bevFleetShare.DE.2023"
+      ]
+     },
+     "late-majority": {
+      "value": 0.25275736160188456,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.2287534084502583,
+      "high": 0.27833560358454945,
+      "note": "(1 − innovators) × share of 1698 non-BEV drivers' answers (Yes, but without time frame in mind; I don’t know); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.DE.timeframe",
+       "acea.bevFleetShare.DE.2023"
+      ]
+     },
+     "laggards": {
+      "value": 0.27906242638398115,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.2541962182671013,
+      "high": 0.3053249938817085,
+      "note": "(1 − innovators) × share of 1698 non-BEV drivers' answers (No); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.DE.timeframe",
+       "acea.bevFleetShare.DE.2023"
+      ]
+     }
+    },
+    "original": {
+     "innovators": {
+      "value": 0.029,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+       "publisher": "ACEA",
+       "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.023200000000000002,
+      "high": 0.036250000000000004,
+      "note": "BEV share of the car fleet, 2023; range 0.8× to 1.25× for company cars and growth since.",
+      "from": [
+       "acea.bevFleetShare.DE.2023"
+      ]
+     },
+     "early-adopters": {
+      "value": 0.3562620730270907,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.32947998085564484,
+      "high": 0.3839183403233884,
+      "note": "(1 − innovators) × share of 1698 non-BEV drivers' answers (Yes, within 0-2 years; Yes, within 2-3 years; Yes, within 3-5 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.DE.timeframe",
+       "acea.bevFleetShare.DE.2023"
+      ]
+     },
+     "early-majority": {
+      "value": 0.1692673733804476,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.1488866938816814,
+      "high": 0.19178707431303285,
+      "note": "(1 − innovators) × share of 1698 non-BEV drivers' answers (Yes, within 5-10 years; Yes, but without time frame in mind); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.DE.timeframe",
+       "acea.bevFleetShare.DE.2023"
+      ]
+     },
+     "late-majority": {
+      "value": 0.16640812720848056,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.14618031853307806,
+      "high": 0.18879429747533166,
+      "note": "(1 − innovators) × share of 1698 non-BEV drivers' answers (I don’t know); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.DE.timeframe",
+       "acea.bevFleetShare.DE.2023"
+      ]
+     },
+     "laggards": {
+      "value": 0.27906242638398115,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.2541962182671013,
+      "high": 0.3053249938817085,
+      "note": "(1 − innovators) × share of 1698 non-BEV drivers' answers (No); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.DE.timeframe",
+       "acea.bevFleetShare.DE.2023"
+      ]
+     }
+    }
+   }
+  },
+  "FR": {
+   "n": 1754,
+   "byMapping": {
+    "ladder": {
+     "innovators": {
+      "value": 0.022,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+       "publisher": "ACEA",
+       "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.0176,
+      "high": 0.027499999999999997,
+      "note": "BEV share of the car fleet, 2023; range 0.8× to 1.25× for company cars and growth since.",
+      "from": [
+       "acea.bevFleetShare.FR.2023"
+      ]
+     },
+     "early-adopters": {
+      "value": 0.22582098061573544,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.20308343171663387,
+      "high": 0.2502820431330918,
+      "note": "(1 − innovators) × share of 1754 non-BEV drivers' answers (Yes, within 0-2 years; Yes, within 2-3 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.FR.timeframe",
+       "acea.bevFleetShare.FR.2023"
+      ]
+     },
+     "early-majority": {
+      "value": 0.17731128848346636,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.1567468497440822,
+      "high": 0.1999169223766734,
+      "note": "(1 − innovators) × share of 1754 non-BEV drivers' answers (Yes, within 3-5 years; Yes, within 5-10 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.FR.timeframe",
+       "acea.bevFleetShare.FR.2023"
+      ]
+     },
+     "late-majority": {
+      "value": 0.2905005701254276,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.26556959169656025,
+      "high": 0.316731486791792,
+      "note": "(1 − innovators) × share of 1754 non-BEV drivers' answers (Yes, but without time frame in mind; I don’t know); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.FR.timeframe",
+       "acea.bevFleetShare.FR.2023"
+      ]
+     },
+     "laggards": {
+      "value": 0.28436716077537055,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.25961448410140586,
+      "high": 0.3104599423177664,
+      "note": "(1 − innovators) × share of 1754 non-BEV drivers' answers (No); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.FR.timeframe",
+       "acea.bevFleetShare.FR.2023"
+      ]
+     }
+    },
+    "original": {
+     "innovators": {
+      "value": 0.022,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+       "publisher": "ACEA",
+       "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.0176,
+      "high": 0.027499999999999997,
+      "note": "BEV share of the car fleet, 2023; range 0.8× to 1.25× for company cars and growth since.",
+      "from": [
+       "acea.bevFleetShare.FR.2023"
+      ]
+     },
+     "early-adopters": {
+      "value": 0.3273010262257697,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.3014174944055121,
+      "high": 0.35424349649792103,
+      "note": "(1 − innovators) × share of 1754 non-BEV drivers' answers (Yes, within 0-2 years; Yes, within 2-3 years; Yes, within 3-5 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.FR.timeframe",
+       "acea.bevFleetShare.FR.2023"
+      ]
+     },
+     "early-majority": {
+      "value": 0.12824401368301025,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.11049836027889903,
+      "high": 0.14835219528841556,
+      "note": "(1 − innovators) × share of 1754 non-BEV drivers' answers (Yes, within 5-10 years; Yes, but without time frame in mind); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.FR.timeframe",
+       "acea.bevFleetShare.FR.2023"
+      ]
+     },
+     "late-majority": {
+      "value": 0.23808779931584947,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.2148779740584902,
+      "high": 0.2629408049295957,
+      "note": "(1 − innovators) × share of 1754 non-BEV drivers' answers (I don’t know); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.FR.timeframe",
+       "acea.bevFleetShare.FR.2023"
+      ]
+     },
+     "laggards": {
+      "value": 0.28436716077537055,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.25961448410140586,
+      "high": 0.3104599423177664,
+      "note": "(1 − innovators) × share of 1754 non-BEV drivers' answers (No); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.FR.timeframe",
+       "acea.bevFleetShare.FR.2023"
+      ]
+     }
+    }
+   }
+  },
+  "ES": {
+   "n": 1872,
+   "byMapping": {
+    "ladder": {
+     "innovators": {
+      "value": 0.006,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+       "publisher": "ACEA",
+       "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.0048000000000000004,
+      "high": 0.0075,
+      "note": "BEV share of the car fleet, 2023; range 0.8× to 1.25× for company cars and growth since.",
+      "from": [
+       "acea.bevFleetShare.ES.2023"
+      ]
+     },
+     "early-adopters": {
+      "value": 0.28673076923076923,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.2624215506391838,
+      "high": 0.3123304716700775,
+      "note": "(1 − innovators) × share of 1872 non-BEV drivers' answers (Yes, within 0-2 years; Yes, within 2-3 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.ES.timeframe",
+       "acea.bevFleetShare.ES.2023"
+      ]
+     },
+     "early-majority": {
+      "value": 0.2575267094017094,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.23412561511435612,
+      "high": 0.2823975214045249,
+      "note": "(1 − innovators) × share of 1872 non-BEV drivers' answers (Yes, within 3-5 years; Yes, within 5-10 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.ES.timeframe",
+       "acea.bevFleetShare.ES.2023"
+      ]
+     },
+     "late-majority": {
+      "value": 0.3069081196581197,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.2820466364904942,
+      "high": 0.3329362523648481,
+      "note": "(1 − innovators) × share of 1872 non-BEV drivers' answers (Yes, but without time frame in mind; I don’t know); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.ES.timeframe",
+       "acea.bevFleetShare.ES.2023"
+      ]
+     },
+     "laggards": {
+      "value": 0.14283440170940173,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.12457556312833497,
+      "high": 0.16326685828650683,
+      "note": "(1 − innovators) × share of 1872 non-BEV drivers' answers (No); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.ES.timeframe",
+       "acea.bevFleetShare.ES.2023"
+      ]
+     }
+    },
+    "original": {
+     "innovators": {
+      "value": 0.006,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+       "publisher": "ACEA",
+       "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.0048000000000000004,
+      "high": 0.0075,
+      "note": "BEV share of the car fleet, 2023; range 0.8× to 1.25× for company cars and growth since.",
+      "from": [
+       "acea.bevFleetShare.ES.2023"
+      ]
+     },
+     "early-adopters": {
+      "value": 0.4359369658119658,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.4088007972503735,
+      "high": 0.4634478960970129,
+      "note": "(1 − innovators) × share of 1872 non-BEV drivers' answers (Yes, within 0-2 years; Yes, within 2-3 years; Yes, within 3-5 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.ES.timeframe",
+       "acea.bevFleetShare.ES.2023"
+      ]
+     },
+     "early-majority": {
+      "value": 0.2548717948717949,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.2315600159627592,
+      "high": 0.2796695854842689,
+      "note": "(1 − innovators) × share of 1872 non-BEV drivers' answers (Yes, within 5-10 years; Yes, but without time frame in mind); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.ES.timeframe",
+       "acea.bevFleetShare.ES.2023"
+      ]
+     },
+     "late-majority": {
+      "value": 0.1603568376068376,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.14110971388330606,
+      "high": 0.18167003900576395,
+      "note": "(1 − innovators) × share of 1872 non-BEV drivers' answers (I don’t know); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.ES.timeframe",
+       "acea.bevFleetShare.ES.2023"
+      ]
+     },
+     "laggards": {
+      "value": 0.14283440170940173,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.12457556312833497,
+      "high": 0.16326685828650683,
+      "note": "(1 − innovators) × share of 1872 non-BEV drivers' answers (No); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.ES.timeframe",
+       "acea.bevFleetShare.ES.2023"
+      ]
+     }
+    }
+   }
+  },
+  "IT": {
+   "n": 1710,
+   "byMapping": {
+    "ladder": {
+     "innovators": {
+      "value": 0.005,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+       "publisher": "ACEA",
+       "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.004,
+      "high": 0.00625,
+      "note": "BEV share of the car fleet, 2023; range 0.8× to 1.25× for company cars and growth since.",
+      "from": [
+       "acea.bevFleetShare.IT.2023"
+      ]
+     },
+     "early-adopters": {
+      "value": 0.2792982456140351,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.25411081497503435,
+      "high": 0.30595128680179334,
+      "note": "(1 − innovators) × share of 1710 non-BEV drivers' answers (Yes, within 0-2 years; Yes, within 2-3 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.IT.timeframe",
+       "acea.bevFleetShare.IT.2023"
+      ]
+     },
+     "early-majority": {
+      "value": 0.22576608187134503,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.20251106557439008,
+      "high": 0.2508462718383526,
+      "note": "(1 − innovators) × share of 1710 non-BEV drivers' answers (Yes, within 3-5 years; Yes, within 5-10 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.IT.timeframe",
+       "acea.bevFleetShare.IT.2023"
+      ]
+     },
+     "late-majority": {
+      "value": 0.3258479532163743,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.29935783305996755,
+      "high": 0.35349102033780355,
+      "note": "(1 − innovators) × share of 1710 non-BEV drivers' answers (Yes, but without time frame in mind; I don’t know); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.IT.timeframe",
+       "acea.bevFleetShare.IT.2023"
+      ]
+     },
+     "laggards": {
+      "value": 0.1640877192982456,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.14377979405390362,
+      "high": 0.1866350974610891,
+      "note": "(1 − innovators) × share of 1710 non-BEV drivers' answers (No); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.IT.timeframe",
+       "acea.bevFleetShare.IT.2023"
+      ]
+     }
+    },
+    "original": {
+     "innovators": {
+      "value": 0.005,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+       "publisher": "ACEA",
+       "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.004,
+      "high": 0.00625,
+      "note": "BEV share of the car fleet, 2023; range 0.8× to 1.25× for company cars and growth since.",
+      "from": [
+       "acea.bevFleetShare.IT.2023"
+      ]
+     },
+     "early-adopters": {
+      "value": 0.4241842105263158,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.3959132515053615,
+      "high": 0.45294761469165257,
+      "note": "(1 − innovators) × share of 1710 non-BEV drivers' answers (Yes, within 0-2 years; Yes, within 2-3 years; Yes, within 3-5 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.IT.timeframe",
+       "acea.bevFleetShare.IT.2023"
+      ]
+     },
+     "early-majority": {
+      "value": 0.2152923976608187,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.19247771446432468,
+      "high": 0.24000260383370575,
+      "note": "(1 − innovators) × share of 1710 non-BEV drivers' answers (Yes, within 5-10 years; Yes, but without time frame in mind); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.IT.timeframe",
+       "acea.bevFleetShare.IT.2023"
+      ]
+     },
+     "late-majority": {
+      "value": 0.1914356725146199,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.16971097851086595,
+      "high": 0.21521612958143102,
+      "note": "(1 − innovators) × share of 1710 non-BEV drivers' answers (I don’t know); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.IT.timeframe",
+       "acea.bevFleetShare.IT.2023"
+      ]
+     },
+     "laggards": {
+      "value": 0.1640877192982456,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.14377979405390362,
+      "high": 0.1866350974610891,
+      "note": "(1 − innovators) × share of 1710 non-BEV drivers' answers (No); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.IT.timeframe",
+       "acea.bevFleetShare.IT.2023"
+      ]
+     }
+    }
+   }
+  },
+  "NL": {
+   "n": 1729,
+   "byMapping": {
+    "ladder": {
+     "innovators": {
+      "value": 0.049,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+       "publisher": "ACEA",
+       "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.039200000000000006,
+      "high": 0.06125,
+      "note": "BEV share of the car fleet, 2023; range 0.8× to 1.25× for company cars and growth since.",
+      "from": [
+       "acea.bevFleetShare.NL.2023"
+      ]
+     },
+     "early-adopters": {
+      "value": 0.14025737420474263,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.12190432989186019,
+      "high": 0.16083750315897363,
+      "note": "(1 − innovators) × share of 1729 non-BEV drivers' answers (Yes, within 0-2 years; Yes, within 2-3 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.NL.timeframe",
+       "acea.bevFleetShare.NL.2023"
+      ]
+     },
+     "early-majority": {
+      "value": 0.17545922498554076,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.15517244977397618,
+      "high": 0.19773923181622866,
+      "note": "(1 − innovators) × share of 1729 non-BEV drivers' answers (Yes, within 3-5 years; Yes, within 5-10 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.NL.timeframe",
+       "acea.bevFleetShare.NL.2023"
+      ]
+     },
+     "late-majority": {
+      "value": 0.360818970503181,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.33460149026056957,
+      "high": 0.38779830004476074,
+      "note": "(1 − innovators) × share of 1729 non-BEV drivers' answers (Yes, but without time frame in mind; I don’t know); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.NL.timeframe",
+       "acea.bevFleetShare.NL.2023"
+      ]
+     },
+     "laggards": {
+      "value": 0.27446443030653556,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.2502883326690474,
+      "high": 0.2999760479381384,
+      "note": "(1 − innovators) × share of 1729 non-BEV drivers' answers (No); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.NL.timeframe",
+       "acea.bevFleetShare.NL.2023"
+      ]
+     }
+    },
+    "original": {
+     "innovators": {
+      "value": 0.049,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+       "publisher": "ACEA",
+       "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.039200000000000006,
+      "high": 0.06125,
+      "note": "BEV share of the car fleet, 2023; range 0.8× to 1.25× for company cars and growth since.",
+      "from": [
+       "acea.bevFleetShare.NL.2023"
+      ]
+     },
+     "early-adopters": {
+      "value": 0.2376124927703875,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.2146609611846931,
+      "high": 0.2621443592328386,
+      "note": "(1 − innovators) × share of 1729 non-BEV drivers' answers (Yes, within 0-2 years; Yes, within 2-3 years; Yes, within 3-5 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.NL.timeframe",
+       "acea.bevFleetShare.NL.2023"
+      ]
+     },
+     "early-majority": {
+      "value": 0.25576344707923654,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.23217940050502672,
+      "high": 0.28080724806561813,
+      "note": "(1 − innovators) × share of 1729 non-BEV drivers' answers (Yes, within 5-10 years; Yes, but without time frame in mind); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.NL.timeframe",
+       "acea.bevFleetShare.NL.2023"
+      ]
+     },
+     "late-majority": {
+      "value": 0.18315962984384038,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.16249541578868856,
+      "high": 0.20576592016950365,
+      "note": "(1 − innovators) × share of 1729 non-BEV drivers' answers (I don’t know); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.NL.timeframe",
+       "acea.bevFleetShare.NL.2023"
+      ]
+     },
+     "laggards": {
+      "value": 0.27446443030653556,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.2502883326690474,
+      "high": 0.2999760479381384,
+      "note": "(1 − innovators) × share of 1729 non-BEV drivers' answers (No); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.NL.timeframe",
+       "acea.bevFleetShare.NL.2023"
+      ]
+     }
+    }
+   }
+  },
+  "BE": {
+   "n": 1321,
+   "byMapping": {
+    "ladder": {
+     "innovators": {
+      "value": 0.03,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+       "publisher": "ACEA",
+       "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.024,
+      "high": 0.0375,
+      "note": "BEV share of the car fleet, 2023; range 0.8× to 1.25× for company cars and growth since.",
+      "from": [
+       "acea.bevFleetShare.BE.2023"
+      ]
+     },
+     "early-adopters": {
+      "value": 0.13143830431491293,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.11104111151456061,
+      "high": 0.154906566007483,
+      "note": "(1 − innovators) × share of 1321 non-BEV drivers' answers (Yes, within 0-2 years; Yes, within 2-3 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.BE.timeframe",
+       "acea.bevFleetShare.BE.2023"
+      ]
+     },
+     "early-majority": {
+      "value": 0.18357305071915217,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.15980816525974179,
+      "high": 0.20995615794440964,
+      "note": "(1 − innovators) × share of 1321 non-BEV drivers' answers (Yes, within 3-5 years; Yes, within 5-10 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.BE.timeframe",
+       "acea.bevFleetShare.BE.2023"
+      ]
+     },
+     "late-majority": {
+      "value": 0.3186828160484481,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.28937215998597193,
+      "high": 0.34943811822533205,
+      "note": "(1 − innovators) × share of 1321 non-BEV drivers' answers (Yes, but without time frame in mind; I don’t know); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.BE.timeframe",
+       "acea.bevFleetShare.BE.2023"
+      ]
+     },
+     "laggards": {
+      "value": 0.3363058289174867,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.3065216075622682,
+      "high": 0.3673816213021426,
+      "note": "(1 − innovators) × share of 1321 non-BEV drivers' answers (No); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.BE.timeframe",
+       "acea.bevFleetShare.BE.2023"
+      ]
+     }
+    },
+    "original": {
+     "innovators": {
+      "value": 0.03,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "Vehicles on European roads, January 2025 (table: cars by power source, 2023)",
+       "publisher": "ACEA",
+       "url": "https://www.acea.auto/publication/report-vehicles-on-european-roads-2025/"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.024,
+      "high": 0.0375,
+      "note": "BEV share of the car fleet, 2023; range 0.8× to 1.25× for company cars and growth since.",
+      "from": [
+       "acea.bevFleetShare.BE.2023"
+      ]
+     },
+     "early-adopters": {
+      "value": 0.2151476154428463,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.18973568298597873,
+      "high": 0.24290351013832248,
+      "note": "(1 − innovators) × share of 1321 non-BEV drivers' answers (Yes, within 0-2 years; Yes, within 2-3 years; Yes, within 3-5 years); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.BE.timeframe",
+       "acea.bevFleetShare.BE.2023"
+      ]
+     },
+     "early-majority": {
+      "value": 0.2136790310370931,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.1883381938682486,
+      "high": 0.24137658670162704,
+      "note": "(1 − innovators) × share of 1321 non-BEV drivers' answers (Yes, within 5-10 years; Yes, but without time frame in mind); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.BE.timeframe",
+       "acea.bevFleetShare.BE.2023"
+      ]
+     },
+     "late-majority": {
+      "value": 0.2048675246025738,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.17996412226000902,
+      "high": 0.23220418298331316,
+      "note": "(1 − innovators) × share of 1321 non-BEV drivers' answers (I don’t know); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.BE.timeframe",
+       "acea.bevFleetShare.BE.2023"
+      ]
+     },
+     "laggards": {
+      "value": 0.3363058289174867,
+      "unit": "share of drivers",
+      "method": "derived",
+      "source": {
+       "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+       "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+       "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+      },
+      "retrieved": "2026-10-20",
+      "confidence": "medium",
+      "low": 0.3065216075622682,
+      "high": 0.3673816213021426,
+      "note": "(1 − innovators) × share of 1321 non-BEV drivers' answers (No); 95% Wilson interval, design effect 1.5.",
+      "from": [
+       "eafo2023.BE.timeframe",
+       "acea.bevFleetShare.BE.2023"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

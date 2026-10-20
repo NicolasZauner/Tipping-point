@@ -1,0 +1,5224 @@
+{
+ "source": {
+  "title": "EAFO Consumer Monitor 2023, descriptive statistics",
+  "publisher": "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
+  "url": "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal"
+ },
+ "retrieved": "2026-10-20",
+ "markets": {
+  "DE": {
+   "file": "EAFO Germany.html",
+   "respondents": {
+    "bevDrivers": 146,
+    "nonBevDrivers": 1919
+   },
+   "timeframe": {
+    "I don’t know": 291,
+    "No": 488,
+    "Yes, but without time frame in mind": 151,
+    "Yes, within 0-2 years": 157,
+    "Yes, within 2-3 years": 240,
+    "Yes, within 3-5 years": 226,
+    "Yes, within 5-10 years": 145
+   },
+   "tables": {
+    "consideration-timeframe-bev": {
+     "caption": "Consideration and timeframe to purchase a BEV (By non-BEV drivers)",
+     "headers": [
+      "Timeframe",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "I don’t know",
+       "291",
+       "17.14%"
+      ],
+      [
+       "No",
+       "488",
+       "28.74%"
+      ],
+      [
+       "Yes, but without time frame in mind",
+       "151",
+       "8.89%"
+      ],
+      [
+       "Yes, within 0-2 years",
+       "157",
+       "9.25%"
+      ],
+      [
+       "Yes, within 2-3 years",
+       "240",
+       "14.13%"
+      ],
+      [
+       "Yes, within 3-5 years",
+       "226",
+       "13.31%"
+      ],
+      [
+       "Yes, within 5-10 years",
+       "145",
+       "8.54%"
+      ]
+     ]
+    },
+    "drivetrain-next-car": {
+     "caption": "What type of drivetrain do you expect to choose for your next car? (by DT)",
+     "headers": [
+      "Drivetrain",
+      "Driver Type",
+      "Frequency",
+      "Group Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "BEV-Driver",
+       "115",
+       "139",
+       "82.73%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "BEV-Driver",
+       "1",
+       "139",
+       "0.72%"
+      ],
+      [
+       "Diesel",
+       "BEV-Driver",
+       "5",
+       "139",
+       "3.60%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "BEV-Driver",
+       "3",
+       "139",
+       "2.16%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "4",
+       "139",
+       "2.88%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "BEV-Driver",
+       "0",
+       "139",
+       "0.00%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "BEV-Driver",
+       "1",
+       "139",
+       "0.72%"
+      ],
+      [
+       "Petrol",
+       "BEV-Driver",
+       "6",
+       "139",
+       "4.32%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "BEV-Driver",
+       "4",
+       "139",
+       "2.88%"
+      ],
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "non-BEV-Driver",
+       "235",
+       "1698",
+       "13.84%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "non-BEV-Driver",
+       "13",
+       "1698",
+       "0.77%"
+      ],
+      [
+       "Diesel",
+       "non-BEV-Driver",
+       "131",
+       "1698",
+       "7.71%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "non-BEV-Driver",
+       "241",
+       "1698",
+       "14.19%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "297",
+       "1698",
+       "17.49%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "non-BEV-Driver",
+       "24",
+       "1698",
+       "1.41%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "non-BEV-Driver",
+       "21",
+       "1698",
+       "1.24%"
+      ],
+      [
+       "Petrol",
+       "non-BEV-Driver",
+       "573",
+       "1698",
+       "33.75%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "non-BEV-Driver",
+       "163",
+       "1698",
+       "9.60%"
+      ]
+     ]
+    },
+    "timeframe-next-car": {
+     "caption": "Within which timeframe do you consider purchasing your next car? (by DT)",
+     "headers": [
+      "Timeframe",
+      "Driver Type",
+      "Frequency",
+      "Group total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "After more than 10 years",
+       "BEV-Driver",
+       "0",
+       "146",
+       "0.00%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "BEV-Driver",
+       "7",
+       "146",
+       "4.79%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "21",
+       "146",
+       "14.38%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "BEV-Driver",
+       "37",
+       "146",
+       "25.34%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "BEV-Driver",
+       "43",
+       "146",
+       "29.45%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "BEV-Driver",
+       "26",
+       "146",
+       "17.81%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "BEV-Driver",
+       "12",
+       "146",
+       "8.22%"
+      ],
+      [
+       "After more than 10 years",
+       "non-BEV-Driver",
+       "33",
+       "1919",
+       "1.72%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "non-BEV-Driver",
+       "221",
+       "1919",
+       "11.52%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "334",
+       "1919",
+       "17.40%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "non-BEV-Driver",
+       "333",
+       "1919",
+       "17.35%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "non-BEV-Driver",
+       "431",
+       "1919",
+       "22.46%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "non-BEV-Driver",
+       "378",
+       "1919",
+       "19.70%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "non-BEV-Driver",
+       "189",
+       "1919",
+       "9.85%"
+      ]
+     ]
+    },
+    "parking-possibilities": {
+     "caption": "Parking Availability",
+     "headers": [
+      "Parking Type",
+      "Driver Type",
+      "Frequency",
+      "Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Private parking on your own driveway or garage",
+       "non-BEV-Driver",
+       "1044",
+       "1856",
+       "56.25%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "non-BEV-Driver",
+       "351",
+       "1856",
+       "18.91%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "non-BEV-Driver",
+       "234",
+       "1856",
+       "12.61%"
+      ],
+      [
+       "Private parking spot on the road",
+       "non-BEV-Driver",
+       "158",
+       "1856",
+       "8.51%"
+      ],
+      [
+       "Private parking on your own driveway or garage",
+       "BEV-Driver",
+       "109",
+       "157",
+       "69.43%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "non-BEV-Driver",
+       "53",
+       "1856",
+       "2.86%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "BEV-Driver",
+       "25",
+       "157",
+       "15.92%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "non-BEV-Driver",
+       "16",
+       "1856",
+       "0.86%"
+      ],
+      [
+       "Private parking spot on the road",
+       "BEV-Driver",
+       "14",
+       "157",
+       "8.92%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "BEV-Driver",
+       "7",
+       "157",
+       "4.46%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "BEV-Driver",
+       "2",
+       "157",
+       "1.27%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "BEV-Driver",
+       "0",
+       "157",
+       "0.00%"
+      ]
+     ]
+    },
+    "ownership-model-main-car-dt": {
+     "caption": "Ownership model of the main car by DT",
+     "headers": [
+      "Car Number",
+      "Driver Type",
+      "Frequency",
+      "Total DT",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car is BEV",
+       "7",
+       "134",
+       "5.22%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car is BEV",
+       "16",
+       "134",
+       "11.94%"
+      ],
+      [
+       "Private leasing",
+       "Main car is BEV",
+       "30",
+       "134",
+       "22.39%"
+      ],
+      [
+       "Privately owned",
+       "Main car is BEV",
+       "81",
+       "134",
+       "60.45%"
+      ],
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car NOT BEV",
+       "7",
+       "1778",
+       "0.39%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car NOT BEV",
+       "33",
+       "1778",
+       "1.86%"
+      ],
+      [
+       "Private leasing",
+       "Main car NOT BEV",
+       "101",
+       "1778",
+       "5.68%"
+      ],
+      [
+       "Privately owned",
+       "Main car NOT BEV",
+       "1637",
+       "1778",
+       "92.07%"
+      ]
+     ]
+    },
+    "km-per-year-all": {
+     "caption": "",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "6000.00"
+      ],
+      [
+       "Median",
+       "10000.00"
+      ],
+      [
+       "Mean",
+       "12510.24"
+      ],
+      [
+       "3rd Qu.",
+       "15000.00"
+      ],
+      [
+       "Max",
+       "60000.00"
+      ],
+      [
+       "I don’t know (count)",
+       "371.00"
+      ]
+     ]
+    },
+    "w2p-petrol": {
+     "caption": "Willingness to pay for a petrol/diesel car (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "10000.00"
+      ],
+      [
+       "Median",
+       "20000.00"
+      ],
+      [
+       "Mean",
+       "22302.66"
+      ],
+      [
+       "3rd Qu.",
+       "30000.00"
+      ],
+      [
+       "Max",
+       "100000.00"
+      ],
+      [
+       "No interest in petrol/diesel car (count)",
+       "756.00"
+      ]
+     ]
+    },
+    "w2p-bev": {
+     "caption": "Willingness to pay for a BEV (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "15000.00"
+      ],
+      [
+       "Median",
+       "25000.00"
+      ],
+      [
+       "Mean",
+       "27846.34"
+      ],
+      [
+       "3rd Qu.",
+       "40000.00"
+      ],
+      [
+       "Max",
+       "100000.00"
+      ],
+      [
+       "No interest in BEV (count)",
+       "951.00"
+      ]
+     ]
+    },
+    "subsidy-impact": {
+     "caption": "To what degree did the following governmental incentives have an impact on your decision to drive an Electric Vehicle? (in %, only BEV Drivers)",
+     "headers": [
+      "Incentives",
+      "High impact",
+      "Low impact",
+      "Medium impact",
+      "No impact",
+      "NA"
+     ],
+     "rows": [
+      [
+       "Purchase subsidy new electric car",
+       "41.78",
+       "14.38",
+       "28.77",
+       "10.96",
+       "4.11"
+      ],
+      [
+       "Purchase subsidy used electric car",
+       "19.18",
+       "17.81",
+       "13.70",
+       "14.38",
+       "34.93"
+      ],
+      [
+       "Purchase subsidy for wallbox (recharging station at home)",
+       "28.08",
+       "17.81",
+       "21.92",
+       "14.38",
+       "17.81"
+      ],
+      [
+       "Higher tax deduction/ Lower addition (for a company car)",
+       "19.18",
+       "12.33",
+       "21.23",
+       "13.01",
+       "34.25"
+      ],
+      [
+       "Exemption (road tax) – international péage",
+       "22.60",
+       "25.34",
+       "28.77",
+       "17.81",
+       "5.48"
+      ]
+     ]
+    },
+    "familiarity-with-bev": {
+     "caption": "To what extent are you familiar with driving a battery electric car?",
+     "headers": [
+      "Extent",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "A bit familiar, I know something about it",
+       "498",
+       "25.79%"
+      ],
+      [
+       "Familiar, I have a fair amount of knowledge about it",
+       "260",
+       "13.46%"
+      ],
+      [
+       "Not familiar, I know very little to nothing about it",
+       "857",
+       "44.38%"
+      ],
+      [
+       "Very familiar (via friends, relatives, or general interest), but I do not drive electric",
+       "203",
+       "10.51%"
+      ],
+      [
+       "Very familiar, I drive electric on a regular basis",
+       "113",
+       "5.85%"
+      ]
+     ]
+    },
+    "accommodation-type": {
+     "caption": "Accommodation of Respondents",
+     "headers": [
+      "Accommodation",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Appartement/studio",
+       "1002",
+       "48.52%"
+      ],
+      [
+       "Attached house",
+       "186",
+       "9.01%"
+      ],
+      [
+       "Detached house",
+       "667",
+       "32.30%"
+      ],
+      [
+       "Others, namely:",
+       "21",
+       "1.02%"
+      ],
+      [
+       "Semi-detached house",
+       "189",
+       "9.15%"
+      ]
+     ]
+    },
+    "income": {
+     "caption": "Income of Respondents",
+     "headers": [
+      "Income",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "< 800 €",
+       "77",
+       "3.73%"
+      ],
+      [
+       "≥ 6000 €",
+       "174",
+       "8.43%"
+      ],
+      [
+       "2000-3999 €",
+       "834",
+       "40.39%"
+      ],
+      [
+       "4000-5999 €",
+       "450",
+       "21.79%"
+      ],
+      [
+       "800-1999 €",
+       "530",
+       "25.67%"
+      ]
+     ]
+    }
+   }
+  },
+  "FR": {
+   "file": "EAFO France.html",
+   "respondents": {
+    "bevDrivers": 359,
+    "nonBevDrivers": 1927
+   },
+   "timeframe": {
+    "I don’t know": 427,
+    "No": 510,
+    "Yes, but without time frame in mind": 94,
+    "Yes, within 0-2 years": 205,
+    "Yes, within 2-3 years": 200,
+    "Yes, within 3-5 years": 182,
+    "Yes, within 5-10 years": 136
+   },
+   "tables": {
+    "consideration-timeframe-bev": {
+     "caption": "Consideration and timeframe to purchase a BEV (By non-BEV drivers)",
+     "headers": [
+      "Timeframe",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "I don’t know",
+       "427",
+       "24.34%"
+      ],
+      [
+       "No",
+       "510",
+       "29.08%"
+      ],
+      [
+       "Yes, but without time frame in mind",
+       "94",
+       "5.36%"
+      ],
+      [
+       "Yes, within 0-2 years",
+       "205",
+       "11.69%"
+      ],
+      [
+       "Yes, within 2-3 years",
+       "200",
+       "11.40%"
+      ],
+      [
+       "Yes, within 3-5 years",
+       "182",
+       "10.38%"
+      ],
+      [
+       "Yes, within 5-10 years",
+       "136",
+       "7.75%"
+      ]
+     ]
+    },
+    "drivetrain-next-car": {
+     "caption": "What type of drivetrain do you expect to choose for your next car? (by DT)",
+     "headers": [
+      "Drivetrain",
+      "Driver Type",
+      "Frequency",
+      "Group Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "BEV-Driver",
+       "314",
+       "344",
+       "91.28%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "BEV-Driver",
+       "0",
+       "344",
+       "0.00%"
+      ],
+      [
+       "Diesel",
+       "BEV-Driver",
+       "1",
+       "344",
+       "0.29%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "BEV-Driver",
+       "3",
+       "344",
+       "0.87%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "5",
+       "344",
+       "1.45%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "BEV-Driver",
+       "1",
+       "344",
+       "0.29%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "BEV-Driver",
+       "2",
+       "344",
+       "0.58%"
+      ],
+      [
+       "Petrol",
+       "BEV-Driver",
+       "11",
+       "344",
+       "3.20%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "BEV-Driver",
+       "7",
+       "344",
+       "2.03%"
+      ],
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "non-BEV-Driver",
+       "194",
+       "1754",
+       "11.06%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "non-BEV-Driver",
+       "11",
+       "1754",
+       "0.63%"
+      ],
+      [
+       "Diesel",
+       "non-BEV-Driver",
+       "278",
+       "1754",
+       "15.85%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "non-BEV-Driver",
+       "294",
+       "1754",
+       "16.76%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "378",
+       "1754",
+       "21.55%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "non-BEV-Driver",
+       "37",
+       "1754",
+       "2.11%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "non-BEV-Driver",
+       "12",
+       "1754",
+       "0.68%"
+      ],
+      [
+       "Petrol",
+       "non-BEV-Driver",
+       "332",
+       "1754",
+       "18.93%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "non-BEV-Driver",
+       "218",
+       "1754",
+       "12.43%"
+      ]
+     ]
+    },
+    "timeframe-next-car": {
+     "caption": "Within which timeframe do you consider purchasing your next car? (by DT)",
+     "headers": [
+      "Timeframe",
+      "Driver Type",
+      "Frequency",
+      "Group total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "After more than 10 years",
+       "BEV-Driver",
+       "7",
+       "359",
+       "1.95%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "BEV-Driver",
+       "15",
+       "359",
+       "4.18%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "33",
+       "359",
+       "9.19%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "BEV-Driver",
+       "121",
+       "359",
+       "33.70%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "BEV-Driver",
+       "75",
+       "359",
+       "20.89%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "BEV-Driver",
+       "72",
+       "359",
+       "20.06%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "BEV-Driver",
+       "36",
+       "359",
+       "10.03%"
+      ],
+      [
+       "After more than 10 years",
+       "non-BEV-Driver",
+       "47",
+       "1927",
+       "2.44%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "non-BEV-Driver",
+       "173",
+       "1927",
+       "8.98%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "400",
+       "1927",
+       "20.76%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "non-BEV-Driver",
+       "489",
+       "1927",
+       "25.38%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "non-BEV-Driver",
+       "381",
+       "1927",
+       "19.77%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "non-BEV-Driver",
+       "287",
+       "1927",
+       "14.89%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "non-BEV-Driver",
+       "150",
+       "1927",
+       "7.78%"
+      ]
+     ]
+    },
+    "parking-possibilities": {
+     "caption": "Parking Availability",
+     "headers": [
+      "Parking Type",
+      "Driver Type",
+      "Frequency",
+      "Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Private parking on your own driveway or garage",
+       "non-BEV-Driver",
+       "1196",
+       "1872",
+       "63.89%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "non-BEV-Driver",
+       "316",
+       "1872",
+       "16.88%"
+      ],
+      [
+       "Private parking on your own driveway or garage",
+       "BEV-Driver",
+       "284",
+       "393",
+       "72.26%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "non-BEV-Driver",
+       "165",
+       "1872",
+       "8.81%"
+      ],
+      [
+       "Private parking spot on the road",
+       "non-BEV-Driver",
+       "120",
+       "1872",
+       "6.41%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "BEV-Driver",
+       "67",
+       "393",
+       "17.05%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "non-BEV-Driver",
+       "51",
+       "1872",
+       "2.72%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "non-BEV-Driver",
+       "24",
+       "1872",
+       "1.28%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "BEV-Driver",
+       "19",
+       "393",
+       "4.83%"
+      ],
+      [
+       "Private parking spot on the road",
+       "BEV-Driver",
+       "16",
+       "393",
+       "4.07%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "BEV-Driver",
+       "7",
+       "393",
+       "1.78%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "BEV-Driver",
+       "0",
+       "393",
+       "0.00%"
+      ]
+     ]
+    },
+    "ownership-model-main-car-dt": {
+     "caption": "Ownership model of the main car by DT",
+     "headers": [
+      "Car Number",
+      "Driver Type",
+      "Frequency",
+      "Total DT",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car is BEV",
+       "8",
+       "332",
+       "2.41%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car is BEV",
+       "17",
+       "332",
+       "5.12%"
+      ],
+      [
+       "Private leasing",
+       "Main car is BEV",
+       "103",
+       "332",
+       "31.02%"
+      ],
+      [
+       "Privately owned",
+       "Main car is BEV",
+       "204",
+       "332",
+       "61.45%"
+      ],
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car NOT BEV",
+       "5",
+       "1860",
+       "0.27%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car NOT BEV",
+       "35",
+       "1860",
+       "1.88%"
+      ],
+      [
+       "Private leasing",
+       "Main car NOT BEV",
+       "96",
+       "1860",
+       "5.16%"
+      ],
+      [
+       "Privately owned",
+       "Main car NOT BEV",
+       "1724",
+       "1860",
+       "92.69%"
+      ]
+     ]
+    },
+    "km-per-year-all": {
+     "caption": "",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "8000.00"
+      ],
+      [
+       "Median",
+       "13000.00"
+      ],
+      [
+       "Mean",
+       "14858.08"
+      ],
+      [
+       "3rd Qu.",
+       "20000.00"
+      ],
+      [
+       "Max",
+       "70000.00"
+      ],
+      [
+       "I don’t know (count)",
+       "517.00"
+      ]
+     ]
+    },
+    "w2p-petrol": {
+     "caption": "Willingness to pay for a petrol/diesel car (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "10000.00"
+      ],
+      [
+       "Median",
+       "15000.00"
+      ],
+      [
+       "Mean",
+       "18930.91"
+      ],
+      [
+       "3rd Qu.",
+       "25000.00"
+      ],
+      [
+       "Max",
+       "100000.00"
+      ],
+      [
+       "No interest in petrol/diesel car (count)",
+       "914.00"
+      ]
+     ]
+    },
+    "w2p-bev": {
+     "caption": "Willingness to pay for a BEV (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "15000.00"
+      ],
+      [
+       "Median",
+       "20000.00"
+      ],
+      [
+       "Mean",
+       "23987.08"
+      ],
+      [
+       "3rd Qu.",
+       "30000.00"
+      ],
+      [
+       "Max",
+       "100000.00"
+      ],
+      [
+       "No interest in BEV (count)",
+       "920.00"
+      ]
+     ]
+    },
+    "subsidy-impact": {
+     "caption": "To what degree did the following governmental incentives have an impact on your decision to drive an Electric Vehicle? (in %, only BEV Drivers)",
+     "headers": [
+      "Incentives",
+      "High impact",
+      "Low impact",
+      "Medium impact",
+      "No impact",
+      "NA"
+     ],
+     "rows": [
+      [
+       "Purchase subsidy new electric car",
+       "52.09",
+       "9.75",
+       "25.91",
+       "7.24",
+       "5.01"
+      ],
+      [
+       "Purchase subsidy used electric car",
+       "25.91",
+       "13.65",
+       "20.89",
+       "13.37",
+       "26.18"
+      ],
+      [
+       "Purchase subsidy for wallbox (recharging station at home)",
+       "15.32",
+       "24.51",
+       "21.45",
+       "20.33",
+       "18.38"
+      ],
+      [
+       "Higher tax deduction/ Lower addition (for a company car)",
+       "20.61",
+       "7.80",
+       "15.32",
+       "13.09",
+       "43.18"
+      ],
+      [
+       "Exemption (road tax) – international péage",
+       "18.94",
+       "8.36",
+       "8.36",
+       "18.66",
+       "45.68"
+      ]
+     ]
+    },
+    "familiarity-with-bev": {
+     "caption": "To what extent are you familiar with driving a battery electric car?",
+     "headers": [
+      "Extent",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "A bit familiar, I know something about it",
+       "614",
+       "31.42%"
+      ],
+      [
+       "Familiar, I have a fair amount of knowledge about it",
+       "238",
+       "12.18%"
+      ],
+      [
+       "Not familiar, I know very little to nothing about it",
+       "864",
+       "44.22%"
+      ],
+      [
+       "Very familiar (via friends, relatives, or general interest), but I do not drive electric",
+       "154",
+       "7.88%"
+      ],
+      [
+       "Very familiar, I drive electric on a regular basis",
+       "84",
+       "4.30%"
+      ]
+     ]
+    },
+    "accommodation-type": {
+     "caption": "Accommodation of Respondents",
+     "headers": [
+      "Accommodation",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Appartement/studio",
+       "795",
+       "34.78%"
+      ],
+      [
+       "Attached house",
+       "149",
+       "6.52%"
+      ],
+      [
+       "Detached house",
+       "1199",
+       "52.45%"
+      ],
+      [
+       "Others, namely:",
+       "7",
+       "0.31%"
+      ],
+      [
+       "Semi-detached house",
+       "136",
+       "5.95%"
+      ]
+     ]
+    },
+    "income": {
+     "caption": "Income of Respondents",
+     "headers": [
+      "Income",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "< 800 €",
+       "74",
+       "3.24%"
+      ],
+      [
+       "≥ 6000 €",
+       "223",
+       "9.76%"
+      ],
+      [
+       "2000-3999 €",
+       "872",
+       "38.15%"
+      ],
+      [
+       "4000-5999 €",
+       "533",
+       "23.32%"
+      ],
+      [
+       "800-1999 €",
+       "584",
+       "25.55%"
+      ]
+     ]
+    }
+   }
+  },
+  "ES": {
+   "file": "EAFO Spain.html",
+   "respondents": {
+    "bevDrivers": 37,
+    "nonBevDrivers": 1976
+   },
+   "timeframe": {
+    "I don’t know": 302,
+    "No": 269,
+    "Yes, but without time frame in mind": 276,
+    "Yes, within 0-2 years": 250,
+    "Yes, within 2-3 years": 290,
+    "Yes, within 3-5 years": 281,
+    "Yes, within 5-10 years": 204
+   },
+   "tables": {
+    "consideration-timeframe-bev": {
+     "caption": "Consideration and timeframe to purchase a BEV (By non-BEV drivers)",
+     "headers": [
+      "Timeframe",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "I don’t know",
+       "302",
+       "16.13%"
+      ],
+      [
+       "No",
+       "269",
+       "14.37%"
+      ],
+      [
+       "Yes, but without time frame in mind",
+       "276",
+       "14.74%"
+      ],
+      [
+       "Yes, within 0-2 years",
+       "250",
+       "13.35%"
+      ],
+      [
+       "Yes, within 2-3 years",
+       "290",
+       "15.49%"
+      ],
+      [
+       "Yes, within 3-5 years",
+       "281",
+       "15.01%"
+      ],
+      [
+       "Yes, within 5-10 years",
+       "204",
+       "10.90%"
+      ]
+     ]
+    },
+    "drivetrain-next-car": {
+     "caption": "What type of drivetrain do you expect to choose for your next car? (by DT)",
+     "headers": [
+      "Drivetrain",
+      "Driver Type",
+      "Frequency",
+      "Group Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "BEV-Driver",
+       "23",
+       "37",
+       "62.16%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "BEV-Driver",
+       "0",
+       "37",
+       "0.00%"
+      ],
+      [
+       "Diesel",
+       "BEV-Driver",
+       "2",
+       "37",
+       "5.41%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "BEV-Driver",
+       "2",
+       "37",
+       "5.41%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "3",
+       "37",
+       "8.11%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "BEV-Driver",
+       "2",
+       "37",
+       "5.41%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "BEV-Driver",
+       "1",
+       "37",
+       "2.70%"
+      ],
+      [
+       "Petrol",
+       "BEV-Driver",
+       "0",
+       "37",
+       "0.00%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "BEV-Driver",
+       "4",
+       "37",
+       "10.81%"
+      ],
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "non-BEV-Driver",
+       "181",
+       "1872",
+       "9.67%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "non-BEV-Driver",
+       "13",
+       "1872",
+       "0.69%"
+      ],
+      [
+       "Diesel",
+       "non-BEV-Driver",
+       "249",
+       "1872",
+       "13.30%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "non-BEV-Driver",
+       "482",
+       "1872",
+       "25.75%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "350",
+       "1872",
+       "18.70%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "non-BEV-Driver",
+       "29",
+       "1872",
+       "1.55%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "non-BEV-Driver",
+       "9",
+       "1872",
+       "0.48%"
+      ],
+      [
+       "Petrol",
+       "non-BEV-Driver",
+       "269",
+       "1872",
+       "14.37%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "non-BEV-Driver",
+       "290",
+       "1872",
+       "15.49%"
+      ]
+     ]
+    },
+    "timeframe-next-car": {
+     "caption": "Within which timeframe do you consider purchasing your next car? (by DT)",
+     "headers": [
+      "Timeframe",
+      "Driver Type",
+      "Frequency",
+      "Group total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "After more than 10 years",
+       "BEV-Driver",
+       "2",
+       "37",
+       "5.41%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "BEV-Driver",
+       "0",
+       "37",
+       "0.00%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "2",
+       "37",
+       "5.41%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "BEV-Driver",
+       "6",
+       "37",
+       "16.22%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "BEV-Driver",
+       "11",
+       "37",
+       "29.73%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "BEV-Driver",
+       "9",
+       "37",
+       "24.32%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "BEV-Driver",
+       "7",
+       "37",
+       "18.92%"
+      ],
+      [
+       "After more than 10 years",
+       "non-BEV-Driver",
+       "60",
+       "1976",
+       "3.04%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "non-BEV-Driver",
+       "104",
+       "1976",
+       "5.26%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "260",
+       "1976",
+       "13.16%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "non-BEV-Driver",
+       "489",
+       "1976",
+       "24.75%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "non-BEV-Driver",
+       "459",
+       "1976",
+       "23.23%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "non-BEV-Driver",
+       "389",
+       "1976",
+       "19.69%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "non-BEV-Driver",
+       "215",
+       "1976",
+       "10.88%"
+      ]
+     ]
+    },
+    "parking-possibilities": {
+     "caption": "Parking Availability",
+     "headers": [
+      "Parking Type",
+      "Driver Type",
+      "Frequency",
+      "Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Private parking on your own driveway or garage",
+       "non-BEV-Driver",
+       "958",
+       "1964",
+       "48.78%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "non-BEV-Driver",
+       "482",
+       "1964",
+       "24.54%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "non-BEV-Driver",
+       "318",
+       "1964",
+       "16.19%"
+      ],
+      [
+       "Private parking spot on the road",
+       "non-BEV-Driver",
+       "100",
+       "1964",
+       "5.09%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "non-BEV-Driver",
+       "75",
+       "1964",
+       "3.82%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "non-BEV-Driver",
+       "31",
+       "1964",
+       "1.58%"
+      ],
+      [
+       "Private parking on your own driveway or garage",
+       "BEV-Driver",
+       "22",
+       "41",
+       "53.66%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "BEV-Driver",
+       "12",
+       "41",
+       "29.27%"
+      ],
+      [
+       "Private parking spot on the road",
+       "BEV-Driver",
+       "3",
+       "41",
+       "7.32%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "BEV-Driver",
+       "2",
+       "41",
+       "4.88%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "BEV-Driver",
+       "2",
+       "41",
+       "4.88%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "BEV-Driver",
+       "0",
+       "41",
+       "0.00%"
+      ]
+     ]
+    },
+    "ownership-model-main-car-dt": {
+     "caption": "Ownership model of the main car by DT",
+     "headers": [
+      "Car Number",
+      "Driver Type",
+      "Frequency",
+      "Total DT",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car is BEV",
+       "0",
+       "29",
+       "0.00%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car is BEV",
+       "1",
+       "29",
+       "3.45%"
+      ],
+      [
+       "Private leasing",
+       "Main car is BEV",
+       "4",
+       "29",
+       "13.79%"
+      ],
+      [
+       "Privately owned",
+       "Main car is BEV",
+       "24",
+       "29",
+       "82.76%"
+      ],
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car NOT BEV",
+       "6",
+       "1905",
+       "0.31%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car NOT BEV",
+       "24",
+       "1905",
+       "1.26%"
+      ],
+      [
+       "Private leasing",
+       "Main car NOT BEV",
+       "42",
+       "1905",
+       "2.20%"
+      ],
+      [
+       "Privately owned",
+       "Main car NOT BEV",
+       "1833",
+       "1905",
+       "96.22%"
+      ]
+     ]
+    },
+    "km-per-year-all": {
+     "caption": "",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "6000.00"
+      ],
+      [
+       "Median",
+       "11000.00"
+      ],
+      [
+       "Mean",
+       "13976.22"
+      ],
+      [
+       "3rd Qu.",
+       "20000.00"
+      ],
+      [
+       "Max",
+       "75000.00"
+      ],
+      [
+       "I don’t know (count)",
+       "679.00"
+      ]
+     ]
+    },
+    "w2p-petrol": {
+     "caption": "Willingness to pay for a petrol/diesel car (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.0"
+      ],
+      [
+       "1st Qu.",
+       "12000.0"
+      ],
+      [
+       "Median",
+       "20000.0"
+      ],
+      [
+       "Mean",
+       "20562.3"
+      ],
+      [
+       "3rd Qu.",
+       "25000.0"
+      ],
+      [
+       "Max",
+       "90000.0"
+      ],
+      [
+       "No interest in petrol/diesel car (count)",
+       "561.0"
+      ]
+     ]
+    },
+    "w2p-bev": {
+     "caption": "Willingness to pay for a BEV (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "15000.00"
+      ],
+      [
+       "Median",
+       "22500.00"
+      ],
+      [
+       "Mean",
+       "23967.18"
+      ],
+      [
+       "3rd Qu.",
+       "30000.00"
+      ],
+      [
+       "Max",
+       "100000.00"
+      ],
+      [
+       "No interest in BEV (count)",
+       "587.00"
+      ]
+     ]
+    },
+    "subsidy-impact": {
+     "caption": "To what degree did the following governmental incentives have an impact on your decision to drive an Electric Vehicle? (in %, only BEV Drivers)",
+     "headers": [
+      "Incentives",
+      "High impact",
+      "Low impact",
+      "Medium impact",
+      "No impact",
+      "NA"
+     ],
+     "rows": [
+      [
+       "Purchase subsidy new electric car",
+       "40.54",
+       "16.22",
+       "29.73",
+       "5.41",
+       "8.11"
+      ],
+      [
+       "Purchase subsidy used electric car",
+       "21.62",
+       "13.51",
+       "40.54",
+       "8.11",
+       "16.22"
+      ],
+      [
+       "Purchase subsidy for wallbox (recharging station at home)",
+       "24.32",
+       "13.51",
+       "37.84",
+       "10.81",
+       "13.51"
+      ],
+      [
+       "Higher tax deduction/ Lower addition (for a company car)",
+       "27.03",
+       "18.92",
+       "43.24",
+       "2.70",
+       "8.11"
+      ],
+      [
+       "Exemption (road tax) – international péage",
+       "29.73",
+       "16.22",
+       "32.43",
+       "10.81",
+       "10.81"
+      ]
+     ]
+    },
+    "familiarity-with-bev": {
+     "caption": "To what extent are you familiar with driving a battery electric car?",
+     "headers": [
+      "Extent",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "A bit familiar, I know something about it",
+       "646",
+       "32.56%"
+      ],
+      [
+       "Familiar, I have a fair amount of knowledge about it",
+       "311",
+       "15.68%"
+      ],
+      [
+       "Not familiar, I know very little to nothing about it",
+       "670",
+       "33.77%"
+      ],
+      [
+       "Very familiar (via friends, relatives, or general interest), but I do not drive electric",
+       "226",
+       "11.39%"
+      ],
+      [
+       "Very familiar, I drive electric on a regular basis",
+       "131",
+       "6.60%"
+      ]
+     ]
+    },
+    "accommodation-type": {
+     "caption": "Accommodation of Respondents",
+     "headers": [
+      "Accommodation",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Appartement/studio",
+       "1395",
+       "69.30%"
+      ],
+      [
+       "Attached house",
+       "184",
+       "9.14%"
+      ],
+      [
+       "Detached house",
+       "222",
+       "11.03%"
+      ],
+      [
+       "Others, namely:",
+       "19",
+       "0.94%"
+      ],
+      [
+       "Semi-detached house",
+       "193",
+       "9.59%"
+      ]
+     ]
+    },
+    "income": {
+     "caption": "Income of Respondents",
+     "headers": [
+      "Income",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "< 800 €",
+       "143",
+       "7.10%"
+      ],
+      [
+       "≥ 6000 €",
+       "87",
+       "4.32%"
+      ],
+      [
+       "2000-3999 €",
+       "794",
+       "39.44%"
+      ],
+      [
+       "4000-5999 €",
+       "279",
+       "13.86%"
+      ],
+      [
+       "800-1999 €",
+       "710",
+       "35.27%"
+      ]
+     ]
+    }
+   }
+  },
+  "IT": {
+   "file": "EAFO Italy.html",
+   "respondents": {
+    "bevDrivers": 142,
+    "nonBevDrivers": 1766
+   },
+   "timeframe": {
+    "I don’t know": 329,
+    "No": 282,
+    "Yes, but without time frame in mind": 231,
+    "Yes, within 0-2 years": 209,
+    "Yes, within 2-3 years": 271,
+    "Yes, within 3-5 years": 249,
+    "Yes, within 5-10 years": 139
+   },
+   "tables": {
+    "consideration-timeframe-bev": {
+     "caption": "Consideration and timeframe to purchase a BEV (By non-BEV drivers)",
+     "headers": [
+      "Timeframe",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "I don’t know",
+       "329",
+       "19.24%"
+      ],
+      [
+       "No",
+       "282",
+       "16.49%"
+      ],
+      [
+       "Yes, but without time frame in mind",
+       "231",
+       "13.51%"
+      ],
+      [
+       "Yes, within 0-2 years",
+       "209",
+       "12.22%"
+      ],
+      [
+       "Yes, within 2-3 years",
+       "271",
+       "15.85%"
+      ],
+      [
+       "Yes, within 3-5 years",
+       "249",
+       "14.56%"
+      ],
+      [
+       "Yes, within 5-10 years",
+       "139",
+       "8.13%"
+      ]
+     ]
+    },
+    "drivetrain-next-car": {
+     "caption": "What type of drivetrain do you expect to choose for your next car? (by DT)",
+     "headers": [
+      "Drivetrain",
+      "Driver Type",
+      "Frequency",
+      "Group Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "BEV-Driver",
+       "117",
+       "140",
+       "83.57%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "BEV-Driver",
+       "1",
+       "140",
+       "0.71%"
+      ],
+      [
+       "Diesel",
+       "BEV-Driver",
+       "2",
+       "140",
+       "1.43%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "BEV-Driver",
+       "4",
+       "140",
+       "2.86%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "1",
+       "140",
+       "0.71%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "BEV-Driver",
+       "1",
+       "140",
+       "0.71%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "BEV-Driver",
+       "2",
+       "140",
+       "1.43%"
+      ],
+      [
+       "Petrol",
+       "BEV-Driver",
+       "3",
+       "140",
+       "2.14%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "BEV-Driver",
+       "9",
+       "140",
+       "6.43%"
+      ],
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "non-BEV-Driver",
+       "170",
+       "1710",
+       "9.94%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "non-BEV-Driver",
+       "38",
+       "1710",
+       "2.22%"
+      ],
+      [
+       "Diesel",
+       "non-BEV-Driver",
+       "179",
+       "1710",
+       "10.47%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "non-BEV-Driver",
+       "377",
+       "1710",
+       "22.05%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "319",
+       "1710",
+       "18.65%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "non-BEV-Driver",
+       "124",
+       "1710",
+       "7.25%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "non-BEV-Driver",
+       "12",
+       "1710",
+       "0.70%"
+      ],
+      [
+       "Petrol",
+       "non-BEV-Driver",
+       "206",
+       "1710",
+       "12.05%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "non-BEV-Driver",
+       "285",
+       "1710",
+       "16.67%"
+      ]
+     ]
+    },
+    "timeframe-next-car": {
+     "caption": "Within which timeframe do you consider purchasing your next car? (by DT)",
+     "headers": [
+      "Timeframe",
+      "Driver Type",
+      "Frequency",
+      "Group total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "After more than 10 years",
+       "BEV-Driver",
+       "7",
+       "142",
+       "4.93%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "BEV-Driver",
+       "2",
+       "142",
+       "1.41%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "8",
+       "142",
+       "5.63%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "BEV-Driver",
+       "39",
+       "142",
+       "27.46%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "BEV-Driver",
+       "37",
+       "142",
+       "26.06%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "BEV-Driver",
+       "28",
+       "142",
+       "19.72%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "BEV-Driver",
+       "21",
+       "142",
+       "14.79%"
+      ],
+      [
+       "After more than 10 years",
+       "non-BEV-Driver",
+       "36",
+       "1766",
+       "2.04%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "non-BEV-Driver",
+       "56",
+       "1766",
+       "3.17%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "335",
+       "1766",
+       "18.97%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "non-BEV-Driver",
+       "449",
+       "1766",
+       "25.42%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "non-BEV-Driver",
+       "434",
+       "1766",
+       "24.58%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "non-BEV-Driver",
+       "298",
+       "1766",
+       "16.87%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "non-BEV-Driver",
+       "158",
+       "1766",
+       "8.95%"
+      ]
+     ]
+    },
+    "parking-possibilities": {
+     "caption": "Parking Availability",
+     "headers": [
+      "Parking Type",
+      "Driver Type",
+      "Frequency",
+      "Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Private parking on your own driveway or garage",
+       "non-BEV-Driver",
+       "958",
+       "1842",
+       "52.01%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "non-BEV-Driver",
+       "429",
+       "1842",
+       "23.29%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "non-BEV-Driver",
+       "243",
+       "1842",
+       "13.19%"
+      ],
+      [
+       "Private parking spot on the road",
+       "non-BEV-Driver",
+       "121",
+       "1842",
+       "6.57%"
+      ],
+      [
+       "Private parking on your own driveway or garage",
+       "BEV-Driver",
+       "95",
+       "160",
+       "59.38%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "non-BEV-Driver",
+       "62",
+       "1842",
+       "3.37%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "BEV-Driver",
+       "36",
+       "160",
+       "22.50%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "non-BEV-Driver",
+       "29",
+       "1842",
+       "1.57%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "BEV-Driver",
+       "12",
+       "160",
+       "7.50%"
+      ],
+      [
+       "Private parking spot on the road",
+       "BEV-Driver",
+       "10",
+       "160",
+       "6.25%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "BEV-Driver",
+       "4",
+       "160",
+       "2.50%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "BEV-Driver",
+       "3",
+       "160",
+       "1.87%"
+      ]
+     ]
+    },
+    "ownership-model-main-car-dt": {
+     "caption": "Ownership model of the main car by DT",
+     "headers": [
+      "Car Number",
+      "Driver Type",
+      "Frequency",
+      "Total DT",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car is BEV",
+       "5",
+       "125",
+       "4.00%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car is BEV",
+       "2",
+       "125",
+       "1.60%"
+      ],
+      [
+       "Private leasing",
+       "Main car is BEV",
+       "12",
+       "125",
+       "9.60%"
+      ],
+      [
+       "Privately owned",
+       "Main car is BEV",
+       "106",
+       "125",
+       "84.80%"
+      ],
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car NOT BEV",
+       "4",
+       "1744",
+       "0.23%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car NOT BEV",
+       "20",
+       "1744",
+       "1.15%"
+      ],
+      [
+       "Private leasing",
+       "Main car NOT BEV",
+       "33",
+       "1744",
+       "1.89%"
+      ],
+      [
+       "Privately owned",
+       "Main car NOT BEV",
+       "1687",
+       "1744",
+       "96.73%"
+      ]
+     ]
+    },
+    "km-per-year-all": {
+     "caption": "",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "9000.00"
+      ],
+      [
+       "Median",
+       "12000.00"
+      ],
+      [
+       "Mean",
+       "14410.81"
+      ],
+      [
+       "3rd Qu.",
+       "20000.00"
+      ],
+      [
+       "Max",
+       "75000.00"
+      ],
+      [
+       "I don’t know (count)",
+       "561.00"
+      ]
+     ]
+    },
+    "w2p-petrol": {
+     "caption": "Willingness to pay for a petrol/diesel car (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "10000.00"
+      ],
+      [
+       "Median",
+       "16000.00"
+      ],
+      [
+       "Mean",
+       "18707.66"
+      ],
+      [
+       "3rd Qu.",
+       "25000.00"
+      ],
+      [
+       "Max",
+       "100000.00"
+      ],
+      [
+       "No interest in petrol/diesel car (count)",
+       "595.00"
+      ]
+     ]
+    },
+    "w2p-bev": {
+     "caption": "Willingness to pay for a BEV (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "15000.00"
+      ],
+      [
+       "Median",
+       "20000.00"
+      ],
+      [
+       "Mean",
+       "23633.13"
+      ],
+      [
+       "3rd Qu.",
+       "30000.00"
+      ],
+      [
+       "Max",
+       "100000.00"
+      ],
+      [
+       "No interest in BEV (count)",
+       "528.00"
+      ]
+     ]
+    },
+    "subsidy-impact": {
+     "caption": "To what degree did the following governmental incentives have an impact on your decision to drive an Electric Vehicle? (in %, only BEV Drivers)",
+     "headers": [
+      "Incentives",
+      "High impact",
+      "Low impact",
+      "Medium impact",
+      "No impact",
+      "NA"
+     ],
+     "rows": [
+      [
+       "Purchase subsidy new electric car",
+       "43.66",
+       "11.97",
+       "25.35",
+       "14.08",
+       "4.93"
+      ],
+      [
+       "Purchase subsidy used electric car",
+       "18.31",
+       "14.08",
+       "11.27",
+       "22.54",
+       "33.80"
+      ],
+      [
+       "Purchase subsidy for wallbox (recharging station at home)",
+       "21.83",
+       "11.27",
+       "30.28",
+       "19.72",
+       "16.90"
+      ],
+      [
+       "Higher tax deduction/ Lower addition (for a company car)",
+       "21.13",
+       "7.75",
+       "16.20",
+       "20.42",
+       "34.51"
+      ],
+      [
+       "Exemption (road tax) – international péage",
+       "33.10",
+       "18.31",
+       "23.24",
+       "11.97",
+       "13.38"
+      ]
+     ]
+    },
+    "familiarity-with-bev": {
+     "caption": "To what extent are you familiar with driving a battery electric car?",
+     "headers": [
+      "Extent",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "A bit familiar, I know something about it",
+       "620",
+       "34.77%"
+      ],
+      [
+       "Familiar, I have a fair amount of knowledge about it",
+       "345",
+       "19.35%"
+      ],
+      [
+       "Not familiar, I know very little to nothing about it",
+       "559",
+       "31.35%"
+      ],
+      [
+       "Very familiar (via friends, relatives, or general interest), but I do not drive electric",
+       "177",
+       "9.93%"
+      ],
+      [
+       "Very familiar, I drive electric on a regular basis",
+       "82",
+       "4.60%"
+      ]
+     ]
+    },
+    "accommodation-type": {
+     "caption": "Accommodation of Respondents",
+     "headers": [
+      "Accommodation",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Appartement/studio",
+       "1088",
+       "57.02%"
+      ],
+      [
+       "Attached house",
+       "155",
+       "8.12%"
+      ],
+      [
+       "Detached house",
+       "464",
+       "24.32%"
+      ],
+      [
+       "Others, namely:",
+       "15",
+       "0.79%"
+      ],
+      [
+       "Semi-detached house",
+       "186",
+       "9.75%"
+      ]
+     ]
+    },
+    "income": {
+     "caption": "Income of Respondents",
+     "headers": [
+      "Income",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "< 800 €",
+       "156",
+       "8.18%"
+      ],
+      [
+       "≥ 6000 €",
+       "86",
+       "4.51%"
+      ],
+      [
+       "2000-3999 €",
+       "734",
+       "38.47%"
+      ],
+      [
+       "4000-5999 €",
+       "229",
+       "12.00%"
+      ],
+      [
+       "800-1999 €",
+       "703",
+       "36.84%"
+      ]
+     ]
+    }
+   }
+  },
+  "NL": {
+   "file": "EAFO The Netherlands.html",
+   "respondents": {
+    "bevDrivers": 324,
+    "nonBevDrivers": 1897
+   },
+   "timeframe": {
+    "I don’t know": 333,
+    "No": 499,
+    "Yes, but without time frame in mind": 323,
+    "Yes, within 0-2 years": 98,
+    "Yes, within 2-3 years": 157,
+    "Yes, within 3-5 years": 177,
+    "Yes, within 5-10 years": 142
+   },
+   "tables": {
+    "consideration-timeframe-bev": {
+     "caption": "Consideration and timeframe to purchase a BEV (By non-BEV drivers)",
+     "headers": [
+      "Timeframe",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "I don’t know",
+       "333",
+       "19.26%"
+      ],
+      [
+       "No",
+       "499",
+       "28.86%"
+      ],
+      [
+       "Yes, but without time frame in mind",
+       "323",
+       "18.68%"
+      ],
+      [
+       "Yes, within 0-2 years",
+       "98",
+       "5.67%"
+      ],
+      [
+       "Yes, within 2-3 years",
+       "157",
+       "9.08%"
+      ],
+      [
+       "Yes, within 3-5 years",
+       "177",
+       "10.24%"
+      ],
+      [
+       "Yes, within 5-10 years",
+       "142",
+       "8.21%"
+      ]
+     ]
+    },
+    "drivetrain-next-car": {
+     "caption": "What type of drivetrain do you expect to choose for your next car? (by DT)",
+     "headers": [
+      "Drivetrain",
+      "Driver Type",
+      "Frequency",
+      "Group Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "BEV-Driver",
+       "265",
+       "320",
+       "82.81%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "BEV-Driver",
+       "0",
+       "320",
+       "0.00%"
+      ],
+      [
+       "Diesel",
+       "BEV-Driver",
+       "1",
+       "320",
+       "0.31%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "BEV-Driver",
+       "15",
+       "320",
+       "4.69%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "10",
+       "320",
+       "3.12%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "BEV-Driver",
+       "1",
+       "320",
+       "0.31%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "BEV-Driver",
+       "7",
+       "320",
+       "2.19%"
+      ],
+      [
+       "Petrol",
+       "BEV-Driver",
+       "6",
+       "320",
+       "1.87%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "BEV-Driver",
+       "15",
+       "320",
+       "4.69%"
+      ],
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "non-BEV-Driver",
+       "185",
+       "1729",
+       "10.70%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "non-BEV-Driver",
+       "17",
+       "1729",
+       "0.98%"
+      ],
+      [
+       "Diesel",
+       "non-BEV-Driver",
+       "38",
+       "1729",
+       "2.20%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "non-BEV-Driver",
+       "385",
+       "1729",
+       "22.27%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "283",
+       "1729",
+       "16.37%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "non-BEV-Driver",
+       "14",
+       "1729",
+       "0.81%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "non-BEV-Driver",
+       "17",
+       "1729",
+       "0.98%"
+      ],
+      [
+       "Petrol",
+       "non-BEV-Driver",
+       "643",
+       "1729",
+       "37.19%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "non-BEV-Driver",
+       "147",
+       "1729",
+       "8.50%"
+      ]
+     ]
+    },
+    "timeframe-next-car": {
+     "caption": "Within which timeframe do you consider purchasing your next car? (by DT)",
+     "headers": [
+      "Timeframe",
+      "Driver Type",
+      "Frequency",
+      "Group total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "After more than 10 years",
+       "BEV-Driver",
+       "7",
+       "324",
+       "2.16%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "BEV-Driver",
+       "4",
+       "324",
+       "1.23%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "40",
+       "324",
+       "12.35%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "BEV-Driver",
+       "84",
+       "324",
+       "25.93%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "BEV-Driver",
+       "72",
+       "324",
+       "22.22%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "BEV-Driver",
+       "79",
+       "324",
+       "24.38%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "BEV-Driver",
+       "38",
+       "324",
+       "11.73%"
+      ],
+      [
+       "After more than 10 years",
+       "non-BEV-Driver",
+       "36",
+       "1897",
+       "1.90%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "non-BEV-Driver",
+       "168",
+       "1897",
+       "8.86%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "430",
+       "1897",
+       "22.67%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "non-BEV-Driver",
+       "329",
+       "1897",
+       "17.34%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "non-BEV-Driver",
+       "367",
+       "1897",
+       "19.35%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "non-BEV-Driver",
+       "380",
+       "1897",
+       "20.03%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "non-BEV-Driver",
+       "187",
+       "1897",
+       "9.86%"
+      ]
+     ]
+    },
+    "parking-possibilities": {
+     "caption": "Parking Availability",
+     "headers": [
+      "Parking Type",
+      "Driver Type",
+      "Frequency",
+      "Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Private parking on your own driveway or garage",
+       "non-BEV-Driver",
+       "776",
+       "1445",
+       "53.70%"
+      ],
+      [
+       "Private parking on your own driveway or garage",
+       "BEV-Driver",
+       "235",
+       "316",
+       "74.37%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "non-BEV-Driver",
+       "217",
+       "1445",
+       "15.02%"
+      ],
+      [
+       "Private parking spot on the road",
+       "non-BEV-Driver",
+       "197",
+       "1445",
+       "13.63%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "non-BEV-Driver",
+       "168",
+       "1445",
+       "11.63%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "non-BEV-Driver",
+       "71",
+       "1445",
+       "4.91%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "BEV-Driver",
+       "31",
+       "316",
+       "9.81%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "BEV-Driver",
+       "30",
+       "316",
+       "9.49%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "non-BEV-Driver",
+       "16",
+       "1445",
+       "1.11%"
+      ],
+      [
+       "Private parking spot on the road",
+       "BEV-Driver",
+       "11",
+       "316",
+       "3.48%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "BEV-Driver",
+       "7",
+       "316",
+       "2.22%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "BEV-Driver",
+       "2",
+       "316",
+       "0.63%"
+      ]
+     ]
+    },
+    "ownership-model-main-car-dt": {
+     "caption": "Ownership model of the main car by DT",
+     "headers": [
+      "Car Number",
+      "Driver Type",
+      "Frequency",
+      "Total DT",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car is BEV",
+       "13",
+       "300",
+       "4.33%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car is BEV",
+       "48",
+       "300",
+       "16.00%"
+      ],
+      [
+       "Private leasing",
+       "Main car is BEV",
+       "43",
+       "300",
+       "14.33%"
+      ],
+      [
+       "Privately owned",
+       "Main car is BEV",
+       "196",
+       "300",
+       "65.33%"
+      ],
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car NOT BEV",
+       "17",
+       "1769",
+       "0.96%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car NOT BEV",
+       "51",
+       "1769",
+       "2.88%"
+      ],
+      [
+       "Private leasing",
+       "Main car NOT BEV",
+       "115",
+       "1769",
+       "6.50%"
+      ],
+      [
+       "Privately owned",
+       "Main car NOT BEV",
+       "1586",
+       "1769",
+       "89.66%"
+      ]
+     ]
+    },
+    "km-per-year-all": {
+     "caption": "",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "7500.00"
+      ],
+      [
+       "Median",
+       "12000.00"
+      ],
+      [
+       "Mean",
+       "14371.19"
+      ],
+      [
+       "3rd Qu.",
+       "20000.00"
+      ],
+      [
+       "Max",
+       "75000.00"
+      ],
+      [
+       "I don’t know (count)",
+       "528.00"
+      ]
+     ]
+    },
+    "w2p-petrol": {
+     "caption": "Willingness to pay for a petrol/diesel car (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.0"
+      ],
+      [
+       "1st Qu.",
+       "7000.0"
+      ],
+      [
+       "Median",
+       "12000.0"
+      ],
+      [
+       "Mean",
+       "17027.9"
+      ],
+      [
+       "3rd Qu.",
+       "25000.0"
+      ],
+      [
+       "Max",
+       "100000.0"
+      ],
+      [
+       "No interest in petrol/diesel car (count)",
+       "845.0"
+      ]
+     ]
+    },
+    "w2p-bev": {
+     "caption": "Willingness to pay for a BEV (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "10000.00"
+      ],
+      [
+       "Median",
+       "20000.00"
+      ],
+      [
+       "Mean",
+       "24604.77"
+      ],
+      [
+       "3rd Qu.",
+       "35000.00"
+      ],
+      [
+       "Max",
+       "100000.00"
+      ],
+      [
+       "No interest in BEV (count)",
+       "874.00"
+      ]
+     ]
+    },
+    "subsidy-impact": {
+     "caption": "To what degree did the following governmental incentives have an impact on your decision to drive an Electric Vehicle? (in %, only BEV Drivers)",
+     "headers": [
+      "Incentives",
+      "High impact",
+      "Low impact",
+      "Medium impact",
+      "No impact",
+      "NA"
+     ],
+     "rows": [
+      [
+       "Purchase subsidy new electric car",
+       "23.46",
+       "15.74",
+       "20.06",
+       "22.22",
+       "18.52"
+      ],
+      [
+       "Purchase subsidy used electric car",
+       "15.43",
+       "10.19",
+       "13.89",
+       "20.68",
+       "39.81"
+      ],
+      [
+       "Purchase subsidy for wallbox (recharging station at home)",
+       "11.11",
+       "10.49",
+       "8.64",
+       "27.47",
+       "42.28"
+      ],
+      [
+       "Higher tax deduction/ Lower addition (for a company car)",
+       "22.53",
+       "6.17",
+       "18.52",
+       "16.67",
+       "36.11"
+      ],
+      [
+       "Exemption (road tax) – international péage",
+       "33.64",
+       "14.51",
+       "25.00",
+       "13.27",
+       "13.58"
+      ]
+     ]
+    },
+    "familiarity-with-bev": {
+     "caption": "To what extent are you familiar with driving a battery electric car?",
+     "headers": [
+      "Extent",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "A bit familiar, I know something about it",
+       "662",
+       "34.46%"
+      ],
+      [
+       "Familiar, I have a fair amount of knowledge about it",
+       "254",
+       "13.22%"
+      ],
+      [
+       "Not familiar, I know very little to nothing about it",
+       "683",
+       "35.55%"
+      ],
+      [
+       "Very familiar (via friends, relatives, or general interest), but I do not drive electric",
+       "230",
+       "11.97%"
+      ],
+      [
+       "Very familiar, I drive electric on a regular basis",
+       "92",
+       "4.79%"
+      ]
+     ]
+    },
+    "accommodation-type": {
+     "caption": "Accommodation of Respondents",
+     "headers": [
+      "Accommodation",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Appartement/studio",
+       "511",
+       "23.01%"
+      ],
+      [
+       "Attached house",
+       "863",
+       "38.86%"
+      ],
+      [
+       "Detached house",
+       "396",
+       "17.83%"
+      ],
+      [
+       "Others, namely:",
+       "67",
+       "3.02%"
+      ],
+      [
+       "Semi-detached house",
+       "384",
+       "17.29%"
+      ]
+     ]
+    },
+    "income": {
+     "caption": "Income of Respondents",
+     "headers": [
+      "Income",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "< 800 €",
+       "82",
+       "3.69%"
+      ],
+      [
+       "≥ 6000 €",
+       "207",
+       "9.32%"
+      ],
+      [
+       "2000-3999 €",
+       "938",
+       "42.23%"
+      ],
+      [
+       "4000-5999 €",
+       "558",
+       "25.12%"
+      ],
+      [
+       "800-1999 €",
+       "436",
+       "19.63%"
+      ]
+     ]
+    }
+   }
+  },
+  "BE": {
+   "file": "EAFO Belgium.html",
+   "respondents": {
+    "bevDrivers": 96,
+    "nonBevDrivers": 1440
+   },
+   "timeframe": {
+    "I don’t know": 279,
+    "No": 458,
+    "Yes, but without time frame in mind": 155,
+    "Yes, within 0-2 years": 82,
+    "Yes, within 2-3 years": 97,
+    "Yes, within 3-5 years": 114,
+    "Yes, within 5-10 years": 136
+   },
+   "tables": {
+    "consideration-timeframe-bev": {
+     "caption": "Consideration and timeframe to purchase a BEV (By non-BEV drivers)",
+     "headers": [
+      "Timeframe",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "I don’t know",
+       "279",
+       "21.12%"
+      ],
+      [
+       "No",
+       "458",
+       "34.67%"
+      ],
+      [
+       "Yes, but without time frame in mind",
+       "155",
+       "11.73%"
+      ],
+      [
+       "Yes, within 0-2 years",
+       "82",
+       "6.21%"
+      ],
+      [
+       "Yes, within 2-3 years",
+       "97",
+       "7.34%"
+      ],
+      [
+       "Yes, within 3-5 years",
+       "114",
+       "8.63%"
+      ],
+      [
+       "Yes, within 5-10 years",
+       "136",
+       "10.30%"
+      ]
+     ]
+    },
+    "drivetrain-next-car": {
+     "caption": "What type of drivetrain do you expect to choose for your next car? (by DT)",
+     "headers": [
+      "Drivetrain",
+      "Driver Type",
+      "Frequency",
+      "Group Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "BEV-Driver",
+       "74",
+       "89",
+       "83.15%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "BEV-Driver",
+       "0",
+       "89",
+       "0.00%"
+      ],
+      [
+       "Diesel",
+       "BEV-Driver",
+       "0",
+       "89",
+       "0.00%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "BEV-Driver",
+       "2",
+       "89",
+       "2.25%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "4",
+       "89",
+       "4.49%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "BEV-Driver",
+       "1",
+       "89",
+       "1.12%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "BEV-Driver",
+       "1",
+       "89",
+       "1.12%"
+      ],
+      [
+       "Petrol",
+       "BEV-Driver",
+       "5",
+       "89",
+       "5.62%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "BEV-Driver",
+       "2",
+       "89",
+       "2.25%"
+      ],
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "non-BEV-Driver",
+       "153",
+       "1321",
+       "11.58%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "non-BEV-Driver",
+       "13",
+       "1321",
+       "0.98%"
+      ],
+      [
+       "Diesel",
+       "non-BEV-Driver",
+       "112",
+       "1321",
+       "8.48%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "non-BEV-Driver",
+       "235",
+       "1321",
+       "17.79%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "279",
+       "1321",
+       "21.12%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "non-BEV-Driver",
+       "10",
+       "1321",
+       "0.76%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "non-BEV-Driver",
+       "10",
+       "1321",
+       "0.76%"
+      ],
+      [
+       "Petrol",
+       "non-BEV-Driver",
+       "390",
+       "1321",
+       "29.52%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "non-BEV-Driver",
+       "119",
+       "1321",
+       "9.01%"
+      ]
+     ]
+    },
+    "timeframe-next-car": {
+     "caption": "Within which timeframe do you consider purchasing your next car? (by DT)",
+     "headers": [
+      "Timeframe",
+      "Driver Type",
+      "Frequency",
+      "Group total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "After more than 10 years",
+       "BEV-Driver",
+       "4",
+       "96",
+       "4.17%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "BEV-Driver",
+       "7",
+       "96",
+       "7.29%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "7",
+       "96",
+       "7.29%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "BEV-Driver",
+       "21",
+       "96",
+       "21.88%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "BEV-Driver",
+       "18",
+       "96",
+       "18.75%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "BEV-Driver",
+       "23",
+       "96",
+       "23.96%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "BEV-Driver",
+       "16",
+       "96",
+       "16.67%"
+      ],
+      [
+       "After more than 10 years",
+       "non-BEV-Driver",
+       "57",
+       "1440",
+       "3.96%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "non-BEV-Driver",
+       "119",
+       "1440",
+       "8.26%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "320",
+       "1440",
+       "22.22%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "non-BEV-Driver",
+       "231",
+       "1440",
+       "16.04%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "non-BEV-Driver",
+       "234",
+       "1440",
+       "16.25%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "non-BEV-Driver",
+       "284",
+       "1440",
+       "19.72%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "non-BEV-Driver",
+       "195",
+       "1440",
+       "13.54%"
+      ]
+     ]
+    },
+    "parking-possibilities": {
+     "caption": "Parking Availability",
+     "headers": [
+      "Parking Type",
+      "Driver Type",
+      "Frequency",
+      "Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Private parking on your own driveway or garage",
+       "non-BEV-Driver",
+       "949",
+       "1390",
+       "68.27%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "non-BEV-Driver",
+       "187",
+       "1390",
+       "13.45%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "non-BEV-Driver",
+       "150",
+       "1390",
+       "10.79%"
+      ],
+      [
+       "Private parking on your own driveway or garage",
+       "BEV-Driver",
+       "84",
+       "106",
+       "79.25%"
+      ],
+      [
+       "Private parking spot on the road",
+       "non-BEV-Driver",
+       "69",
+       "1390",
+       "4.96%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "non-BEV-Driver",
+       "24",
+       "1390",
+       "1.73%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "BEV-Driver",
+       "11",
+       "106",
+       "10.38%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "non-BEV-Driver",
+       "11",
+       "1390",
+       "0.79%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "BEV-Driver",
+       "6",
+       "106",
+       "5.66%"
+      ],
+      [
+       "Private parking spot on the road",
+       "BEV-Driver",
+       "5",
+       "106",
+       "4.72%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "BEV-Driver",
+       "0",
+       "106",
+       "0.00%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "BEV-Driver",
+       "0",
+       "106",
+       "0.00%"
+      ]
+     ]
+    },
+    "ownership-model-main-car-dt": {
+     "caption": "Ownership model of the main car by DT",
+     "headers": [
+      "Car Number",
+      "Driver Type",
+      "Frequency",
+      "Total DT",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car is BEV",
+       "6",
+       "87",
+       "6.90%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car is BEV",
+       "34",
+       "87",
+       "39.08%"
+      ],
+      [
+       "Private leasing",
+       "Main car is BEV",
+       "4",
+       "87",
+       "4.60%"
+      ],
+      [
+       "Privately owned",
+       "Main car is BEV",
+       "43",
+       "87",
+       "49.43%"
+      ],
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car NOT BEV",
+       "6",
+       "1355",
+       "0.44%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car NOT BEV",
+       "81",
+       "1355",
+       "5.98%"
+      ],
+      [
+       "Private leasing",
+       "Main car NOT BEV",
+       "46",
+       "1355",
+       "3.39%"
+      ],
+      [
+       "Privately owned",
+       "Main car NOT BEV",
+       "1222",
+       "1355",
+       "90.18%"
+      ]
+     ]
+    },
+    "km-per-year-all": {
+     "caption": "",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "8000.00"
+      ],
+      [
+       "Median",
+       "12000.00"
+      ],
+      [
+       "Mean",
+       "13895.35"
+      ],
+      [
+       "3rd Qu.",
+       "18000.00"
+      ],
+      [
+       "Max",
+       "55000.00"
+      ],
+      [
+       "I don’t know (count)",
+       "359.00"
+      ]
+     ]
+    },
+    "w2p-petrol": {
+     "caption": "Willingness to pay for a petrol/diesel car (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1500.00"
+      ],
+      [
+       "1st Qu.",
+       "12000.00"
+      ],
+      [
+       "Median",
+       "20000.00"
+      ],
+      [
+       "Mean",
+       "21646.21"
+      ],
+      [
+       "3rd Qu.",
+       "28000.00"
+      ],
+      [
+       "Max",
+       "100000.00"
+      ],
+      [
+       "No interest in petrol/diesel car (count)",
+       "473.00"
+      ]
+     ]
+    },
+    "w2p-bev": {
+     "caption": "Willingness to pay for a BEV (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "2000.00"
+      ],
+      [
+       "1st Qu.",
+       "15000.00"
+      ],
+      [
+       "Median",
+       "25000.00"
+      ],
+      [
+       "Mean",
+       "26013.83"
+      ],
+      [
+       "3rd Qu.",
+       "35000.00"
+      ],
+      [
+       "Max",
+       "100000.00"
+      ],
+      [
+       "No interest in BEV (count)",
+       "703.00"
+      ]
+     ]
+    },
+    "subsidy-impact": {
+     "caption": "To what degree did the following governmental incentives have an impact on your decision to drive an Electric Vehicle? (in %, only BEV Drivers)",
+     "headers": [
+      "Incentives",
+      "High impact",
+      "Low impact",
+      "Medium impact",
+      "No impact",
+      "NA"
+     ],
+     "rows": [
+      [
+       "Purchase subsidy new electric car",
+       "21.88",
+       "9.38",
+       "20.83",
+       "10.42",
+       "37.50"
+      ],
+      [
+       "Purchase subsidy used electric car",
+       "8.33",
+       "11.46",
+       "17.71",
+       "17.71",
+       "44.79"
+      ],
+      [
+       "Purchase subsidy for wallbox (recharging station at home)",
+       "10.42",
+       "19.79",
+       "17.71",
+       "16.67",
+       "35.42"
+      ],
+      [
+       "Higher tax deduction/ Lower addition (for a company car)",
+       "18.75",
+       "12.50",
+       "26.04",
+       "13.54",
+       "29.17"
+      ],
+      [
+       "Exemption (road tax) – international péage",
+       "19.79",
+       "21.88",
+       "23.96",
+       "10.42",
+       "23.96"
+      ]
+     ]
+    },
+    "familiarity-with-bev": {
+     "caption": "To what extent are you familiar with driving a battery electric car?",
+     "headers": [
+      "Extent",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "A bit familiar, I know something about it",
+       "445",
+       "30.71%"
+      ],
+      [
+       "Familiar, I have a fair amount of knowledge about it",
+       "135",
+       "9.32%"
+      ],
+      [
+       "Not familiar, I know very little to nothing about it",
+       "708",
+       "48.86%"
+      ],
+      [
+       "Very familiar (via friends, relatives, or general interest), but I do not drive electric",
+       "113",
+       "7.80%"
+      ],
+      [
+       "Very familiar, I drive electric on a regular basis",
+       "48",
+       "3.31%"
+      ]
+     ]
+    },
+    "accommodation-type": {
+     "caption": "Accommodation of Respondents",
+     "headers": [
+      "Accommodation",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Appartement/studio",
+       "365",
+       "23.76%"
+      ],
+      [
+       "Attached house",
+       "332",
+       "21.61%"
+      ],
+      [
+       "Detached house",
+       "585",
+       "38.09%"
+      ],
+      [
+       "Others, namely:",
+       "23",
+       "1.50%"
+      ],
+      [
+       "Semi-detached house",
+       "231",
+       "15.04%"
+      ]
+     ]
+    },
+    "income": {
+     "caption": "Income of Respondents",
+     "headers": [
+      "Income",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "< 800 €",
+       "28",
+       "1.82%"
+      ],
+      [
+       "≥ 6000 €",
+       "98",
+       "6.38%"
+      ],
+      [
+       "2000-3999 €",
+       "658",
+       "42.84%"
+      ],
+      [
+       "4000-5999 €",
+       "395",
+       "25.72%"
+      ],
+      [
+       "800-1999 €",
+       "357",
+       "23.24%"
+      ]
+     ]
+    }
+   }
+  },
+  "EU": {
+   "file": "EU (all data).html",
+   "respondents": {
+    "bevDrivers": 2046,
+    "nonBevDrivers": 17034
+   },
+   "timeframe": {
+    "I don’t know": 2934,
+    "No": 3924,
+    "Yes, but without time frame in mind": 2186,
+    "Yes, within 0-2 years": 1364,
+    "Yes, within 2-3 years": 1802,
+    "Yes, within 3-5 years": 1963,
+    "Yes, within 5-10 years": 1593
+   },
+   "tables": {
+    "consideration-timeframe-bev": {
+     "caption": "Consideration and timeframe to purchase a BEV (By non-BEV drivers)",
+     "headers": [
+      "Timeframe",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "I don’t know",
+       "2934",
+       "18.61%"
+      ],
+      [
+       "No",
+       "3924",
+       "24.89%"
+      ],
+      [
+       "Yes, but without time frame in mind",
+       "2186",
+       "13.87%"
+      ],
+      [
+       "Yes, within 0-2 years",
+       "1364",
+       "8.65%"
+      ],
+      [
+       "Yes, within 2-3 years",
+       "1802",
+       "11.43%"
+      ],
+      [
+       "Yes, within 3-5 years",
+       "1963",
+       "12.45%"
+      ],
+      [
+       "Yes, within 5-10 years",
+       "1593",
+       "10.10%"
+      ]
+     ]
+    },
+    "drivetrain-next-car": {
+     "caption": "What type of drivetrain do you expect to choose for your next car? (by DT)",
+     "headers": [
+      "Drivetrain",
+      "Driver Type",
+      "Frequency",
+      "Group Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "BEV-Driver",
+       "1658",
+       "1993",
+       "83.19%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "BEV-Driver",
+       "4",
+       "1993",
+       "0.20%"
+      ],
+      [
+       "Diesel",
+       "BEV-Driver",
+       "29",
+       "1993",
+       "1.46%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "BEV-Driver",
+       "49",
+       "1993",
+       "2.46%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "85",
+       "1993",
+       "4.26%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "BEV-Driver",
+       "9",
+       "1993",
+       "0.45%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "BEV-Driver",
+       "25",
+       "1993",
+       "1.25%"
+      ],
+      [
+       "Petrol",
+       "BEV-Driver",
+       "54",
+       "1993",
+       "2.71%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "BEV-Driver",
+       "80",
+       "1993",
+       "4.01%"
+      ],
+      [
+       "Battery Electric Vehicle, i.e. no internal combustion engine; the battery of the electric motor is recharged by the mains.",
+       "non-BEV-Driver",
+       "1745",
+       "15766",
+       "11.07%"
+      ],
+      [
+       "Compressed Natural Gas (CNG)",
+       "non-BEV-Driver",
+       "171",
+       "15766",
+       "1.08%"
+      ],
+      [
+       "Diesel",
+       "non-BEV-Driver",
+       "1716",
+       "15766",
+       "10.88%"
+      ],
+      [
+       "Hybrid Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor is recharged by recovery of brake energy but cannot be recharged through mains power.",
+       "non-BEV-Driver",
+       "2926",
+       "15766",
+       "18.56%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "3047",
+       "15766",
+       "19.33%"
+      ],
+      [
+       "Liquefied Petroleum Gas (LPG)",
+       "non-BEV-Driver",
+       "288",
+       "15766",
+       "1.83%"
+      ],
+      [
+       "None of the vehicles above. Specify:",
+       "non-BEV-Driver",
+       "133",
+       "15766",
+       "0.84%"
+      ],
+      [
+       "Petrol",
+       "non-BEV-Driver",
+       "3987",
+       "15766",
+       "25.29%"
+      ],
+      [
+       "Plugin-hybrid Electric Vehicle, i.e. combination of classical internal combustion and electric motor; the battery of the electric motor can be recharged through the mains.",
+       "non-BEV-Driver",
+       "1753",
+       "15766",
+       "11.12%"
+      ]
+     ]
+    },
+    "timeframe-next-car": {
+     "caption": "Within which timeframe do you consider purchasing your next car? (by DT)",
+     "headers": [
+      "Timeframe",
+      "Driver Type",
+      "Frequency",
+      "Group total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "After more than 10 years",
+       "BEV-Driver",
+       "55",
+       "2046",
+       "2.69%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "BEV-Driver",
+       "53",
+       "2046",
+       "2.59%"
+      ],
+      [
+       "I don’t know",
+       "BEV-Driver",
+       "206",
+       "2046",
+       "10.07%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "BEV-Driver",
+       "547",
+       "2046",
+       "26.74%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "BEV-Driver",
+       "438",
+       "2046",
+       "21.41%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "BEV-Driver",
+       "471",
+       "2046",
+       "23.02%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "BEV-Driver",
+       "276",
+       "2046",
+       "13.49%"
+      ],
+      [
+       "After more than 10 years",
+       "non-BEV-Driver",
+       "472",
+       "17034",
+       "2.77%"
+      ],
+      [
+       "I don’t intend to purchase another car (no need, usage of other mobility options)",
+       "non-BEV-Driver",
+       "1268",
+       "17034",
+       "7.44%"
+      ],
+      [
+       "I don’t know",
+       "non-BEV-Driver",
+       "3259",
+       "17034",
+       "19.13%"
+      ],
+      [
+       "Within 0 to 2 years",
+       "non-BEV-Driver",
+       "3399",
+       "17034",
+       "19.95%"
+      ],
+      [
+       "Within 2 to 3 years",
+       "non-BEV-Driver",
+       "3459",
+       "17034",
+       "20.31%"
+      ],
+      [
+       "Within 3 to 5 years",
+       "non-BEV-Driver",
+       "3240",
+       "17034",
+       "19.02%"
+      ],
+      [
+       "Within 5 to 10 years",
+       "non-BEV-Driver",
+       "1937",
+       "17034",
+       "11.37%"
+      ]
+     ]
+    },
+    "parking-possibilities": {
+     "caption": "Parking Availability",
+     "headers": [
+      "Parking Type",
+      "Driver Type",
+      "Frequency",
+      "Total",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Private parking on your own driveway or garage",
+       "non-BEV-Driver",
+       "9368",
+       "16302",
+       "57.47%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "non-BEV-Driver",
+       "2845",
+       "16302",
+       "17.45%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "non-BEV-Driver",
+       "2006",
+       "16302",
+       "12.31%"
+      ],
+      [
+       "Private parking on your own driveway or garage",
+       "BEV-Driver",
+       "1613",
+       "2213",
+       "72.89%"
+      ],
+      [
+       "Private parking spot on the road",
+       "non-BEV-Driver",
+       "1182",
+       "16302",
+       "7.25%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "non-BEV-Driver",
+       "705",
+       "16302",
+       "4.32%"
+      ],
+      [
+       "Private parking spot in a shared garage or parking terrain (e.g. of a residential apartment)",
+       "BEV-Driver",
+       "309",
+       "2213",
+       "13.96%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "non-BEV-Driver",
+       "196",
+       "16302",
+       "1.20%"
+      ],
+      [
+       "Non-designated public on-street parking spot (not delineated, so without parking spot markings)",
+       "BEV-Driver",
+       "140",
+       "2213",
+       "6.33%"
+      ],
+      [
+       "Private parking spot on the road",
+       "BEV-Driver",
+       "98",
+       "2213",
+       "4.43%"
+      ],
+      [
+       "Public parking place in a public garage or parking terrain",
+       "BEV-Driver",
+       "43",
+       "2213",
+       "1.94%"
+      ],
+      [
+       "Somewhere else, namely: …",
+       "BEV-Driver",
+       "10",
+       "2213",
+       "0.45%"
+      ]
+     ]
+    },
+    "ownership-model-main-car-dt": {
+     "caption": "Ownership model of the main car by DT",
+     "headers": [
+      "Car Number",
+      "Driver Type",
+      "Frequency",
+      "Total DT",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car is BEV",
+       "78",
+       "1849",
+       "4.22%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car is BEV",
+       "209",
+       "1849",
+       "11.30%"
+      ],
+      [
+       "Private leasing",
+       "Main car is BEV",
+       "304",
+       "1849",
+       "16.44%"
+      ],
+      [
+       "Privately owned",
+       "Main car is BEV",
+       "1258",
+       "1849",
+       "68.04%"
+      ],
+      [
+       "Business leasing (if you are self-employed/independent professional)",
+       "Main car NOT BEV",
+       "63",
+       "16155",
+       "0.39%"
+      ],
+      [
+       "Company car (if you are an employee)",
+       "Main car NOT BEV",
+       "358",
+       "16155",
+       "2.22%"
+      ],
+      [
+       "Private leasing",
+       "Main car NOT BEV",
+       "1320",
+       "16155",
+       "8.17%"
+      ],
+      [
+       "Privately owned",
+       "Main car NOT BEV",
+       "14414",
+       "16155",
+       "89.22%"
+      ]
+     ]
+    },
+    "km-per-year-all": {
+     "caption": "",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "8000.00"
+      ],
+      [
+       "Median",
+       "12000.00"
+      ],
+      [
+       "Mean",
+       "14566.59"
+      ],
+      [
+       "3rd Qu.",
+       "20000.00"
+      ],
+      [
+       "Max",
+       "75000.00"
+      ],
+      [
+       "I don’t know (count)",
+       "5013.00"
+      ]
+     ]
+    },
+    "w2p-petrol": {
+     "caption": "Willingness to pay for a petrol/diesel car (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "10000.00"
+      ],
+      [
+       "Median",
+       "16000.00"
+      ],
+      [
+       "Mean",
+       "19413.31"
+      ],
+      [
+       "3rd Qu.",
+       "25000.00"
+      ],
+      [
+       "Max",
+       "100000.00"
+      ],
+      [
+       "No interest in petrol/diesel car (count)",
+       "6694.00"
+      ]
+     ]
+    },
+    "w2p-bev": {
+     "caption": "Willingness to pay for a BEV (full sample)",
+     "headers": [
+      "Statistic",
+      "Value"
+     ],
+     "rows": [
+      [
+       "Min",
+       "1000.00"
+      ],
+      [
+       "1st Qu.",
+       "13000.00"
+      ],
+      [
+       "Median",
+       "20000.00"
+      ],
+      [
+       "Mean",
+       "25055.83"
+      ],
+      [
+       "3rd Qu.",
+       "35000.00"
+      ],
+      [
+       "Max",
+       "100000.00"
+      ],
+      [
+       "No interest in BEV (count)",
+       "7373.00"
+      ]
+     ]
+    },
+    "subsidy-impact": {
+     "caption": "To what degree did the following governmental incentives have an impact on your decision to drive an Electric Vehicle? (in %, only BEV Drivers)",
+     "headers": [
+      "Incentives",
+      "High impact",
+      "Low impact",
+      "Medium impact",
+      "No impact",
+      "Not applicable",
+      "NA"
+     ],
+     "rows": [
+      [
+       "Purchase subsidy new electric car",
+       "37.10",
+       "12.76",
+       "23.41",
+       "13.83",
+       "0.05",
+       "12.85"
+      ],
+      [
+       "Purchase subsidy used electric car",
+       "20.19",
+       "11.97",
+       "16.28",
+       "17.45",
+       "0.39",
+       "33.72"
+      ],
+      [
+       "Purchase subsidy for wallbox (recharging station at home)",
+       "16.96",
+       "16.42",
+       "17.16",
+       "21.80",
+       "0.05",
+       "27.61"
+      ],
+      [
+       "Higher tax deduction/ Lower addition (for a company car)",
+       "21.55",
+       "8.99",
+       "17.94",
+       "16.28",
+       "0.34",
+       "34.90"
+      ],
+      [
+       "Exemption (road tax) – international péage",
+       "24.10",
+       "18.28",
+       "20.14",
+       "15.15",
+       "0.29",
+       "22.04"
+      ]
+     ]
+    },
+    "familiarity-with-bev": {
+     "caption": "To what extent are you familiar with driving a battery electric car?",
+     "headers": [
+      "Extent",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "A bit familiar, I know something about it",
+       "5287",
+       "30.68%"
+      ],
+      [
+       "Familiar, I have a fair amount of knowledge about it",
+       "2272",
+       "13.19%"
+      ],
+      [
+       "Not familiar, I know very little to nothing about it",
+       "6933",
+       "40.24%"
+      ],
+      [
+       "Very familiar (via friends, relatives, or general interest), but I do not drive electric",
+       "1828",
+       "10.61%"
+      ],
+      [
+       "Very familiar, I drive electric on a regular basis",
+       "911",
+       "5.29%"
+      ]
+     ]
+    },
+    "accommodation-type": {
+     "caption": "Accommodation of Respondents",
+     "headers": [
+      "Accommodation",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "Appartement/studio",
+       "7931",
+       "41.57%"
+      ],
+      [
+       "Attached house",
+       "2394",
+       "12.55%"
+      ],
+      [
+       "Detached house",
+       "6841",
+       "35.85%"
+      ],
+      [
+       "Others, namely:",
+       "277",
+       "1.45%"
+      ],
+      [
+       "Semi-detached house",
+       "1637",
+       "8.58%"
+      ]
+     ]
+    },
+    "income": {
+     "caption": "Income of Respondents",
+     "headers": [
+      "Income",
+      "Frequency",
+      "Proportion"
+     ],
+     "rows": [
+      [
+       "< 800 €",
+       "1273",
+       "6.67%"
+      ],
+      [
+       "≥ 6000 €",
+       "1719",
+       "9.01%"
+      ],
+      [
+       "2000-3999 €",
+       "7173",
+       "37.59%"
+      ],
+      [
+       "4000-5999 €",
+       "3624",
+       "18.99%"
+      ],
+      [
+       "800-1999 €",
+       "5291",
+       "27.73%"
+      ]
+     ]
+    }
+   }
+  }
+ }
+}
