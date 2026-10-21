@@ -241,3 +241,7 @@ with the trace linked), or `override` (a person typed it).
   (9), Spanish segment names (13), a model list with prices, volumes and a planted instruction
   (10); 46 rows in all, scored on the largest weight after the override, with a Wilson interval.
   Runs live from the mapper screen; the AI quality page (TP P17) will collect it.
+- First live run, 21 Oct 2026 (Nico, claude.ai, default tier): 45 of 46 rows right (98%, 95%
+  interval 89% to 100%), all reconciliations passing. The miss: "Berlina grande" went to premium,
+  expected medium. With 46 rows the interval's lower end is still under the 90% target, so the
+  set grows to about 100 rows in TP P17 before the AI quality page claims the target is met.
