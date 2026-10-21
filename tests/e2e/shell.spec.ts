@@ -14,7 +14,8 @@ test("shell loads offline with no errors and no sideways scroll", async ({ page 
   page.on("pageerror", (e) => errors.push(String(e)));
   await page.goto(url);
   await expect(page).toHaveTitle("Tipping Point");
-  await expect(page.getByRole("heading", { level: 1, name: "Tipping Point" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: "Segment mapper" })).toBeVisible();
+  await page.locator("#nav-checks").click();
   // Outside a Claude viewer, live AI must report itself absent, not hang.
   await expect(page.getByText("Not here").first()).toBeVisible();
   await expect(page.locator("#tools-test")).toBeDisabled();
@@ -35,6 +36,7 @@ test("served over http, the inline worker runs the model off the main thread", a
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(String(e)));
   await page.goto(served);
+  await page.locator("#nav-checks").click();
   await expect(page.getByTestId("spike-result")).toContainText(
     "Estimate 0.8411 against exact 0.8413",
     { timeout: 15_000 },
@@ -45,6 +47,7 @@ test("served over http, the inline worker runs the model off the main thread", a
 
 test("language toggle switches to German and back", async ({ page }) => {
   await page.goto(url);
+  await page.locator("#nav-checks").click();
   await page.locator("#lang-toggle").click();
   await expect(page.getByText("Was diese Ansicht kann")).toBeVisible();
   await expect(page.locator("html")).toHaveAttribute("lang", "de");
@@ -56,6 +59,7 @@ for (const scheme of ["light", "dark"] as const) {
   test(`no serious accessibility findings (${scheme})`, async ({ page }) => {
     await page.emulateMedia({ colorScheme: scheme });
     await page.goto(url);
+    await page.locator("#nav-checks").click();
     await page
       .getByTestId("spike-result")
       .getByText(/against exact/)

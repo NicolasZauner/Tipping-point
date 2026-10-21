@@ -1,4 +1,4 @@
-// Thin, typed access to the claude.ai artifact runtime (contract 0.2.85). Everything here
+// Thin, typed access to the claude.ai artifact runtime (contract 0.2.88). Everything here
 // degrades to "absent": outside a Claude viewer (offline copy, signed-out visitor) window.claude
 // does not exist, and inside one any capability may resolve null. The app must work without them.
 
@@ -25,11 +25,11 @@ export type SampleLimits = {
 
 export type SampleError = { code: string; message: string; text?: string };
 
-export type SampleFn = ((
-  input: string | { role: "user" | "assistant"; content: string }[],
-  options?: SampleOptions,
-) => Promise<{ text: string; truncated: boolean; modelTierApplied: string }>) & {
-  json: <T = unknown>(input: string, options?: SampleOptions) => Promise<T>;
+export type SampleInput = string | { role: "user" | "assistant"; content: string }[];
+export type SampleResult = { text: string; truncated: boolean; modelTierApplied: string };
+
+export type SampleFn = ((input: SampleInput, options?: SampleOptions) => Promise<SampleResult>) & {
+  json: <T = unknown>(input: SampleInput, options?: SampleOptions) => Promise<T>;
   limits: () => Promise<SampleLimits>;
 };
 

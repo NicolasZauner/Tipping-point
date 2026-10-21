@@ -214,3 +214,30 @@ with the trace linked), or `override` (a person typed it).
   exist); deflation to real 2025 euros.
 - **Confirm:** Nico signs off the data at gate G1.
 - **Measured by:** the share of values with two agreeing sources, reported in the data report.
+
+## Implementation notes (TP P5)
+
+- `src/ai/client.ts` is the one call path: `callText` for prose and `callJson` for data. JSON
+  goes through `sample.json` (the platform tells Claude its reply is machine-parsed); the raw
+  reply comes from the stream for the trace, then Zod validates. No JSON is `invalid_json`;
+  JSON that breaks the schema is our own `bad_shape`. Both offer Try again; nothing retries.
+- A rejection without a `code` is our own bug and is rethrown, never shown as "interrupted".
+- `src/ai/errors.ts` maps all 19 platform codes plus `bad_shape` and `unavailable` to eight
+  actions (hide, wait, sign-in, change-input, try-again, interrupted, bug, quiet), with one
+  string per action in i18n.
+- `src/ai/fake.ts` replays scripted steps (streaming, tool calls run for real, every error code)
+  for unit tests; `tests/e2e/fake-claude.js` injects a keyword-based `window.claude` so the
+  browser suite runs the page's real AI path.
+- Number guard: tokens with "." or "," by UI language (the other convention as fallback),
+  scale words (k, million, Mio., bn), percent and points. Shares in the data match percentages
+  only as ×100, so "0.41%" for a 41% share is caught. Digits glued to letters (CO2, S5) and list
+  markers are skipped. Years match only years in the data.
+- A4 code checks: one row per distinct pasted label (missing rows get the default mapping and an
+  issue; extra rows are listed and ignored), weights in [0, 1] summing to 1, the premium
+  override after the mapping (brand list or €60,000; an override clears a weight issue),
+  reconciliation within 0.5%, number guard on each reason. Rows with an issue block Confirm
+  until the person picks a class or unticks them.
+- A4 eval set v1 (`src/ai/a4/evals.ts`): KBA segments (14 rows), European segments with volumes
+  (9), Spanish segment names (13), a model list with prices, volumes and a planted instruction
+  (10); 46 rows in all, scored on the largest weight after the override, with a Wilson interval.
+  Runs live from the mapper screen; the AI quality page (TP P17) will collect it.
