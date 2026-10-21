@@ -1,6 +1,6 @@
 // Reads the EAFO Consumer Monitor 2023 descriptive-statistics pages (R Markdown HTML, one per
-// country plus the EU, by VUB-MOBI for the European Commission's DG MOVE; Commission material,
-// reusable under CC BY 4.0 with attribution). The files are data: tables are read as text and
+// country plus the EU, by VUB-MOBI for the European Commission's DG MOVE; published on Zenodo,
+// record 14523769, under CC BY-SA 4.0). The files are data: tables are read as text and
 // nothing in them is executed or followed.
 
 import {

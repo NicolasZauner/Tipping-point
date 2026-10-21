@@ -39,7 +39,7 @@ const RETRIEVED = "2026-10-20";
 const EAFO_SOURCE = {
   title: "EAFO Consumer Monitor 2023, descriptive statistics",
   publisher: "European Alternative Fuels Observatory (VUB-MOBI for DG MOVE)",
-  url: "https://alternative-fuels-observatory.ec.europa.eu/consumer-portal",
+  url: "https://zenodo.org/records/14523769",
 };
 
 const pick = (t: EafoTable) => ({ caption: t.caption, headers: t.headers, rows: t.rows });
@@ -92,6 +92,8 @@ for (const m of [...MARKETS, "EU"] as const) {
 
 const header = {
   generatedBy: "scripts/build-segments.ts",
+  survey: "EAFO Consumer Monitor 2023",
+  fieldwork: "2023-10",
   designEffect: DESIGN_EFFECT,
   default: "ladder",
 };

@@ -19,9 +19,10 @@ Innovators come from the ACEA report "Vehicles on European roads" (January 2025 
 BEV share of cars in use in 2023, the year of the survey. The 2024 shares from the 2026 edition
 are kept next to them in `src/data/sources/acea-fleet.json` for the trend.
 
-Reuse: EAFO and the country reports are Commission material under CC BY 4.0. The app credits
-"EAFO Consumer Monitor 2023, European Commission (DG MOVE), VUB-MOBI" and "ACEA" on the sources
-page.
+Reuse: the descriptive-statistics pages are Zenodo record 14523769 (VUB, December 2024) under
+CC BY-SA 4.0, so the derived group sizes carry the same licence; the country reports are
+Commission material under CC BY 4.0. The app credits "EAFO Consumer Monitor 2023, VUB-MOBI for
+the European Commission (DG MOVE), CC BY-SA 4.0" and "ACEA" on the sources page.
 
 ## The question and the mapping (A8)
 
@@ -110,6 +111,29 @@ Belgium has the smallest sample (1,321 answers) and the widest intervals. The Ne
 largest "no time frame / don't know" group (36%), which is plausible for a market where BEVs are
 already common and the decision feels less urgent; it could also mean the Dutch panel read the
 question differently.
+
+## Is 2023 still current? The 2025 wave as a cross-check
+
+The 2025 wave (fieldwork October to November 2025, 3,019 drivers across the EU-27) asks the same
+question but has 79 to 563 answers per market, too few to rebuild the groups. Its Figure 21 shows
+four coarser buckets for five of our markets (no Belgium): near term (0 to 3 years), later or
+unsure (3 to 10 years plus "yes, no time frame"), no, and don't know. That last bucket also holds
+the BEV drivers and people with no plan to buy a car, who weren't asked (10.5% EU-wide), so it
+runs high. Regrouping the 2023 counts the same way:
+
+| Market | 2023 near / later / no / don't know | 2025 near / later / no / don't know | 2025 answers |
+| ------ | ----------------------------------- | ----------------------------------- | ------------ |
+| DE     | 23 / 31 / 29 / 17                   | 22 / 31 / 21 / 26                   | 563          |
+| FR     | 23 / 23 / 29 / 24                   | 18 / 20 / 33 / 29                   | 444          |
+| IT     | 28 / 36 / 17 / 19                   | 31 / 33 / 19 / 18                   | 394          |
+| ES     | 29 / 41 / 14 / 16                   | 24 / 35 / 23 / 18                   | 320          |
+| NL     | 15 / 37 / 29 / 19                   | 18 / 29 / 17 / 37                   | 124          |
+
+The near-term group, which becomes the early adopters, moved by five points or less everywhere.
+France and Spain turned more negative. Nico accepted the 2023 basis on 21 Oct 2026 on condition
+that the app says so: every group size carries a "2023 survey" badge, and the Segments screen
+shows this table. The 2025 EU totals were checked against VUB's question-by-question working
+file (No 26.2%, don't know 15.9%, no time frame 14.9% of those asked; next car BEV 13.9%).
 
 ## For Nico to check
 

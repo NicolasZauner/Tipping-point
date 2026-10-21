@@ -138,6 +138,21 @@ rate. The fleet-based AFIR target is
 
 compared with installed public power from EAFO.
 
+### Fleet CO2 (added 21 Oct 2026)
+
+Average tailpipe CO2 of new cars per market and year, from the forecast volumes:
+
+```latex
+\overline{\mathrm{CO_2}}_{m,y} = \frac{\sum_{c,k} V_{m,y,c,k}\, g_{c,k}}{\sum_{c,k} V_{m,y,c,k}}
+```
+
+with g_{c,k} the WLTP g/km of the reference vehicle of class c and powertrain k (BEV 0; PHEV
+its type-approval value, not real-world, because the targets use type approval). Drawn against
+the EU fleet targets: 93.6 g/km for 2025 to 2029 (the 2025 to 2027 average allowed), 49.5 g/km
+for 2030 to 2034, 0 from 2035 under current law; scenario S5 uses the proposed 90% cut. The
+targets bind each manufacturer's EU fleet, so the screen calls this a market indicator, not a
+compliance check. Tactical registrations count with the market's average mix.
+
 ## 6. Calibration
 
 Parameters θ and their priors (mean, standard deviation):

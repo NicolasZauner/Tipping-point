@@ -22,6 +22,7 @@ describe("generated group sizes", () => {
 
   it("keeps the timeframe ladder as the default", () => {
     expect(groups.default).toBe("ladder");
+    expect(groups.survey).toBe("EAFO Consumer Monitor 2023");
     expect(groups.designEffect).toBe(1.5);
   });
 

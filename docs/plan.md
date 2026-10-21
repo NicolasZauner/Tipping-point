@@ -1,4 +1,4 @@
-<!-- Copy of the Tipping Point build plan doc (https://claude.ai/code/artifact/c2faf653-ffe8-4ece-80fd-ed2d74de1419), exported 2026-10-19 after TP P2. The doc is the source of truth; re-export when it changes. -->
+<!-- Copy of the Tipping Point build plan doc (https://claude.ai/code/artifact/c2faf653-ffe8-4ece-80fd-ed2d74de1419), exported 2026-10-21 after TP P4 (fleet CO2, real-world uplift, 2023 survey label). The doc is the source of truth; re-export when it changes. -->
 
 # Tipping Point build plan
 
@@ -96,7 +96,7 @@ The ratio against ICE drives everything that follows. R = 1 means equal lifetime
 R_k = \frac{\mathrm{TCO}_k}{\mathrm{TCO}_{\mathrm{ICE}}}
 ```
 
-For a company car, the cost is the employer's net cost plus the driver's benefit-in-kind tax, with an editable weight between the two. That's where the 0.25% rule in Germany, bijtelling in the Netherlands and the deductibility rules behind Belgium's BEV boom enter.
+For a company car, the cost is the employer's net cost plus the driver's benefit-in-kind tax, with an editable weight between the two. That's where the 0.25% rule in Germany, bijtelling in the Netherlands and the deductibility rules behind Belgium's BEV boom enter. Real-world consumption gets an uplift over WLTP per powertrain (for BEVs, winter losses plus about 10% charging losses; for PHEVs, the utility factor), each with a passport so the critic can question it. As a cross-check, the EAFO cost calculator's ID.3 against Golf comparison for Germany is rebuilt in the TCO lab; a ratio gap above five points is traced to the input behind it and written into docs/testing.md.
 
 ### Who switches: the threshold-choice model
 
@@ -111,10 +111,12 @@ Early adopters have a mean threshold above 1 and switch while BEVs still cost mo
 With three alternatives, independent curves would let one buyer count twice. So each buyer gets a tolerance t, drawn from their group's normal distribution, and each powertrain gets a novelty weight a (BEV 1, PHEV about 0.6, FHEV about 0.2, ICE 0, all calibrated). The buyer picks the powertrain with the highest u:
 
 ```latex
-u_k = a_k\,(t - 1) - (e_k - 1), \qquad u_{\mathrm{ICE}} = 0, \qquad e_k = R_k\,(1 + h_{k,b})
+u_k = a_k\,(t - 1) - (e_k - 1) + c_k, \qquad u_{\mathrm{ICE}} = 0, \qquad e_k = R_k\,(1 + h_{k,b}), \qquad P_k = \frac{e^{u_k/\tau}}{\sum_j e^{u_j/\tau}}
 ```
 
 Here e is the effective ratio, and h is a hurdle for barriers that aren't costs, such as having no home charger. With BEV as the only alternative, this reduces exactly to your formula: a buyer picks the BEV when t is above e. An early adopter at t = 1.3 picks a BEV at ratio 1.15 over a hybrid at 0.97 (u = 0.15 against 0.09). A laggard at t = 0.8 needs the BEV below 0.8. In academic terms, it's a reduced-form random-coefficient choice model, which gives the report a citable footing. The app integrates over 201 fixed quantiles of t per group, with no random draws, and breaks ties toward the more conservative powertrain (ICE, then FHEV, PHEV, BEV).
+
+TP P3's prototype added two extras that calibration fits. With three alternatives, the crisp rule jumps from 0% to 89% PHEV on a single 15% price step, because the middle option wins nobody or everybody. A small taste spread τ makes the shift gradual. On priors alone, a German private buyer with a home charger also gets over 40% BEV in 2026, far above reality, so appeal constants c absorb what the TCO doesn't hold (model ranges, charging worries, habit). At τ = 0 and c = 0, the rule is still exactly your formula. The crisp case is computed exactly from the upper envelope of the score lines; the smooth case uses Gauss–Hermite quadrature. The details are in `docs/model-spec.md`.
 
 ### From shares to volumes, stock and charging
 
@@ -124,16 +126,16 @@ Markets don't jump to the new equilibrium in one year: supply, dealers and model
 S_y = S_{y-1} + \lambda\,(S^{*}_y - S_{y-1})
 ```
 
-Volumes are the total market × buyer-type mix × class mix × group sizes × shares. The total market starts from 2025 actuals and grows at a CAGR per market. You can also import your own forecast file (a GlobalData export fits) and the AI maps its columns. The vehicle stock runs from 1 January 2025: plus sales, minus scrappage on a survival curve. From the stock, the app derives the public charging power AFIR requires (at least 1.3 kW per BEV and 0.8 kW per PHEV on the road) and compares it with installed capacity.
+Volumes are the total market × buyer-type mix × class mix × group sizes × shares. The total market starts from 2025 actuals and grows at a CAGR per market. You can also import your own forecast file (a GlobalData export fits) and the AI maps its columns. The vehicle stock runs from 1 January 2025: plus sales, minus scrappage on a survival curve. From the stock, the app derives the public charging power AFIR requires (at least 1.3 kW per BEV and 0.8 kW per PHEV on the road) and compares it with installed capacity. Fleet CO2 comes from the same volumes: registrations times WLTP tailpipe CO2 per powertrain and class give the average g/km of new cars per market and year, drawn against the EU fleet targets (93.6 g/km for 2025 to 2029, 49.5 g/km from 2030, zero from 2035 under current law; scenario S5 uses the proposed 90%). The targets bind each manufacturer's EU fleet, not a country, so the line shows how far a market's mix is from the target path; it isn't a compliance check.
 
 ### Calibration and backtest
 
-The model fits about ten parameters:
+The model fits about twenty parameters:
 
 - group means, shared across markets
 - one shift per market
 - the spread σ
-- the PHEV and FHEV novelty weights
+- the PHEV and FHEV novelty weights, three appeal constants and the taste spread
 - the no-home-charger hurdle
 - the adjustment speed λ
 
@@ -149,23 +151,23 @@ One deterministic run takes tens of milliseconds. A full Monte Carlo run takes a
 
 ## Consumer groups from EU survey data
 
-The five groups come from the EAFO Consumer Monitor 2023, run for DG MOVE. It covers about 19,000 drivers in 12 countries, including all six of ours. Non-BEV drivers were asked whether they'd consider a BEV as their next car, and the answer options map almost one to one onto Rogers' groups. The respondent-level data is on Zenodo under CC BY-SA 4.0, so we compute the groups per market ourselves instead of copying a published chart.
+The five groups come from the EAFO Consumer Monitor 2023, run for DG MOVE. It covers about 19,000 drivers in 12 countries, including all six of ours. Non-BEV drivers were asked whether they'd consider a BEV as their next car, and the answer options map almost one to one onto Rogers' groups. The country files on Zenodo (CC BY-SA 4.0) give a count for every answer, so we compute the groups per market ourselves instead of copying a published chart. Wherever the groups appear in the app, they're labelled as 2023 survey data.
 
 One correction matters. BEV drivers make up about 15% of the Dutch respondents (324 of 2,221), far above their real share of drivers. So the innovator group comes from the actual BEV share of the car stock in each market, and the survey answers split the rest.
 
 | Group          | Survey answer (non-BEV drivers)                        | Netherlands 2023, illustrative | Starting threshold μ |
 | -------------- | ------------------------------------------------------ | ------------------------------ | -------------------- |
 | Innovators     | Already drives a BEV (from stock data, not the sample) | about 5%                       | 1.35                 |
-| Early adopters | Yes, within 0 to 5 years (25%)                         | 23.8%                          | 1.15                 |
-| Early majority | Yes, within 5 to 10 years (8%)                         | 7.6%                           | 1.02                 |
+| Early adopters | Yes, within 0 to 3 years (15%)                         | 14.0%                          | 1.15                 |
+| Early majority | Yes, within 3 to 10 years (18%)                        | 17.5%                          | 1.02                 |
 | Late majority  | Yes, no timeframe (19%) plus don't know (19%)          | 36.1%                          | 0.93                 |
-| Laggards       | Not buying a BEV (29%)                                 | 27.6%                          | 0.80                 |
+| Laggards       | Not buying a BEV (29%)                                 | 27.4%                          | 0.80                 |
 
-The Dutch figures are the answer shares from the country report multiplied by the 95% who don't drive a BEV. The starting thresholds are priors; calibration moves them. Rogers' textbook split (2.5, 13.5, 34, 34, 16%) stays available as a reference toggle, so a viewer can see how much the real survey data changes the forecast.
+The Dutch figures are the answer counts from the survey file times the 95.1% who don't drive a BEV, under the timeframe ladder signed off in TP P4. docs/segments.md has all six markets, plus the five-year cut kept as a sensitivity. The starting thresholds are priors; calibration moves them. Rogers' textbook split (2.5, 13.5, 34, 34, 16%) stays available as a reference toggle, so a viewer can see how much the real survey data changes the forecast.
 
 Two limits go on the Segments screen in plain words. The panel is licensed drivers rather than new-car buyers, who skew older, wealthier and more often drive company cars. And stated intentions overshoot actual purchases. The market shift in the calibration absorbs both, and the backtest shows whether that's enough.
 
-The 2025 edition (fieldwork October 2025, EU-27, about 3,000 respondents) is too thin per country to rebuild the groups. We use it to show how attitudes moved since 2023, and as a check on the direction of the calibrated shift.
+The 2025 edition (fieldwork October 2025, EU-27, about 3,000 respondents) is too thin per country to rebuild the groups. We use it to show how attitudes moved since 2023, and as a check on the direction of the calibrated shift. Its chart for the large markets (79 to 563 answers per market, Belgium not shown) puts the near-term group within five points of 2023 everywhere; France and Spain turned more negative. The Segments screen shows both waves side by side, and every group size carries a "2023 survey" badge so nobody mistakes it for current data.
 
 ## Data
 
@@ -271,7 +273,7 @@ The best demo moment is the tipping-point view, and the app is built around it. 
 | Screen           | What it shows                                                                                                                                                     | Demo moment                                                                       |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | Overview         | Europe small multiples coloured by BEV share; a tile per market with BEV share in 2030, TCO parity year per buyer type and the gap to target; a scenario switcher | Press play: 2018 to 2035 in ten seconds, map and tiles moving together            |
-| Market           | Stacked shares by powertrain, 2018 to 2035: history solid, forecast with P10 to P90 bands; volumes and stock tabs; AFIR charging gap                              | The 2024 dip in Germany, and the band widening after 2030                         |
+| Market           | Stacked shares by powertrain, 2018 to 2035: history solid, forecast with P10 to P90 bands; volumes, stock and fleet CO2 tabs; AFIR charging gap                   | The 2024 dip in Germany, and the band widening after 2030                         |
 | TCO lab          | Cost waterfall per powertrain for one market, class and buyer type; the ratio over time with the parity year marked; every bar shows its source on hover          | "Why is a BEV cheaper for a Belgian company car than for a Spanish flat-dweller?" |
 | Tipping point    | The five curves, the draggable ratio line, group sizes from the survey, and a Rogers toggle                                                                       | Drag the line; watch who switches                                                 |
 | Scenario studio  | Levers grouped into prices, energy, taxes, grants and behaviour; a path editor per lever with year handles; two scenarios side by side with Shapley bars          | "Of +6.2 points, 3.1 come from the bonus"                                         |
@@ -399,12 +401,12 @@ If a usage limit cuts a prompt off, send "Continue TP P\<number>" and I pick up 
 
 ### Model (27 Oct to 6 Nov)
 
-| #      | Send this                                                                                           | Skills I load                                                                             | You get                                                                                                                       | Your check                                                      |
-| ------ | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| TP P8  | "TP P8: TCO engine test-first, with the Excel twin."                                                | engineering:testing-strategy, mattpocock-skills:tdd, xlsx                                 | TCO module, `docs/testing.md`, an Excel twin with live formulas matching to the cent                                          | Open the twin; check one market against your intuition (15 min) |
-| TP P9  | "TP P9: adoption, market, stock and charging, test-first."                                          | mattpocock-skills:tdd                                                                     | The threshold-choice model, dynamics, volumes by class, stock, AFIR, property tests                                           | German tipping points for 2026 in plain words (10 min)          |
-| TP P10 | "TP P10: calibration and rolling-origin backtest."                                                  | data:statistical-analysis, mattpocock-skills:tdd                                          | Recovery test, fitted parameters, errors for origins 2021 to 2023 against the baselines, the Germany chart, a one-page result | Does the backtest convince you? (30 min)                        |
-| TP P11 | "TP P11: scenarios, Monte Carlo, goal seek, attribution, golden S1 to S6, and a fresh-eyes review." | mattpocock-skills:codebase-design, mattpocock-skills:code-review, engineering:code-review | Six scenarios as goldens with precomputed bands, the worker, review findings and fixes                                        | Gate G2: read the six results line by line (30 min)             |
+| #      | Send this                                                                                           | Skills I load                                                                             | You get                                                                                                                                                                                  | Your check                                                      |
+| ------ | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| TP P8  | "TP P8: TCO engine test-first, with the Excel twin."                                                | engineering:testing-strategy, mattpocock-skills:tdd, xlsx                                 | TCO module, `docs/testing.md`, an Excel twin with live formulas matching to the cent, the real-world uplift per powertrain, the EAFO calculator cross-check (ID.3 against Golf, Germany) | Open the twin; check one market against your intuition (15 min) |
+| TP P9  | "TP P9: adoption, market, stock and charging, test-first."                                          | mattpocock-skills:tdd                                                                     | The threshold-choice model, dynamics, volumes by class, stock, AFIR, fleet CO2 against the EU targets, property tests                                                                    | German tipping points for 2026 in plain words (10 min)          |
+| TP P10 | "TP P10: calibration and rolling-origin backtest."                                                  | data:statistical-analysis, mattpocock-skills:tdd                                          | Recovery test, fitted parameters, errors for origins 2021 to 2023 against the baselines, the Germany chart, a one-page result                                                            | Does the backtest convince you? (30 min)                        |
+| TP P11 | "TP P11: scenarios, Monte Carlo, goal seek, attribution, golden S1 to S6, and a fresh-eyes review." | mattpocock-skills:codebase-design, mattpocock-skills:code-review, engineering:code-review | Six scenarios as goldens with precomputed bands, the worker, review findings and fixes                                                                                                   | Gate G2: read the six results line by line (30 min)             |
 
 ### AI features and interface (6 to 16 Nov)
 
