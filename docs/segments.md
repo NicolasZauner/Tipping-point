@@ -132,8 +132,14 @@ runs high. Regrouping the 2023 counts the same way:
 The near-term group, which becomes the early adopters, moved by five points or less everywhere.
 France and Spain turned more negative. Nico accepted the 2023 basis on 21 Oct 2026 on condition
 that the app says so: every group size carries a "2023 survey" badge, and the Segments screen
-shows this table. The 2025 EU totals were checked against VUB's question-by-question working
-file (No 26.2%, don't know 15.9%, no time frame 14.9% of those asked; next car BEV 13.9%).
+shows this table. The 2025 EU totals were checked against VUB's question-by-question file
+(No 26.2%, don't know 15.9%, no time frame 14.9% of those asked; next car BEV 13.9%).
+
+Sources for the 2025 wave: the report "Consumer monitor 2025: EU drivers' view on electric cars"
+(European Commission, March 2026; Figure 21 for the market buckets) and the dataset "European
+Alternative Fuel Observatory Consumer Monitor 2025 (EAFO 2025)", Moonen, Van den Steen,
+Vanhaverbeke and Verbist, Zenodo, September 2026, https://doi.org/10.5281/zenodo.22939459,
+CC BY-SA 4.0. The dataset holds EU totals only, no market breakdown.
 
 ## For Nico to check
 
